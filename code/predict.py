@@ -15,6 +15,7 @@ import util
 from util import *
 from network import sparseGO_nn
 import argparse
+# joseba first commit
 
 def predict(criterion, predict_data, gene_dim, drug_dim, model_file, batch_size, result_file, cell_features, drug_features, device):
 
