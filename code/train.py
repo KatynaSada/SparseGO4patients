@@ -192,13 +192,13 @@ def train_model(run,config,model, optimizer, criterion, train_data, cell_feature
                  max_corr_pearson = val_corr
                  best_model_p = epoch+1
                  print("pearson: ",epoch+1)
-        #         torch.save(model, model_dir + '/best_model_p.pt')
+                 torch.save(model, model_dir + '/best_model_p.pt')
     
              if val_corr_spearman >= max_corr_spearman:
                  max_corr_spearman = val_corr_spearman
                  best_model_s = epoch+1
                  print("spearman: ",epoch+1)
-        #         torch.save(model, model_dir + '/best_model_s.pt')
+                 torch.save(model, model_dir + '/best_model_s.pt')
              
              if val_corr_per_drug >= max_corr_per_drug:
                  max_corr_per_drug = val_corr_per_drug
@@ -210,7 +210,7 @@ def train_model(run,config,model, optimizer, criterion, train_data, cell_feature
                  min_loss = val_cum_loss
                  best_model_l = epoch+1
                  print("loss: ",epoch+1)
-        #         torch.save(model, model_dir + '/best_model_l.pt')
+                 torch.save(model, model_dir + '/best_model_l.pt')
 
      wandb.log({"max_pearson_val": max_corr_pearson,
                 "max_spearman_val": max_corr_spearman,
@@ -436,43 +436,43 @@ sweep_config = {
             'value': opt.epoch
         },
         'batch_size': {
-            'values': [10000]
+            'values': [20000]
         },
         'learning_rate': {
-            'value': 0.5
+            'value': 0.1
         },
         'optimizer': {
             'value': 'sgd'
         },
         'decay_rate': {
-            'value': 0.0001
+            'value': 0.002
         },
         'criterion': {
             'value': 'MSELoss'
         },
         'momentum': {
-            'value':0.88
+            'value':0.9
         },
         'num_neurons_per_GO': {
             #'value': opt.num_neurons_per_GO
-            'value': 7
+            'value': 6
         },
         'num_neurons_final_GO': {
             #'value': opt.num_neurons_final_GO
-            'value': 24
+            'value': 30
         },
         'drug_neurons': {
             #'value': list(map(int, opt.drug_neurons.split(',')))
-            'value':list(map(int, '100,50,25'.split(',')))
+            'value':list(map(int, '200,100,50'.split(',')))
         },
         'num_neurons_final': {
-            'value': 20
+            'value': 50
         },
         'p_drop_genes': {
-            'value': 0.1
+            'value': 0
         },
         'p_drop_terms': {
-            'value': 0.05
+            'value': 0
         },
         'p_drop_drugs': {
             'value': 0
@@ -489,7 +489,7 @@ sweep_config = {
 #     – sweep_config: the sweep config dictionary defined above
 #     – entity: Set the username for the sweep
 #     – project: Set the project name for the sweep
-sweep_id = wandb.sweep(sweep_config, entity="katynasada", project=opt.project)
+sweep_id = wandb.sweep(sweep_config, project=opt.project, entity="miramon_team")
 
 # Load ontology: create the graph of connected GO terms
 since1 = time.time()
@@ -531,7 +531,7 @@ num_genes = len(gene2id_mapping)
 
 def pipeline():
     # Initialize a new wandb run
-    run = wandb.init(settings=wandb.Settings(start_method="thread"),name=opt.sweep_name, tags=["fingerprint"])
+    run = wandb.init(settings=wandb.Settings(start_method="thread"),name=opt.sweep_name, tags=["brain","quartile"])
 
     config = wandb.config # config is a variable that holds and saves hyperparameters and inputs
     

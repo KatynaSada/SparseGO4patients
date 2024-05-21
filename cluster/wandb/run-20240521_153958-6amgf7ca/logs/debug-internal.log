@@ -1,0 +1,261 @@
+2024-05-21 15:39:58,959 INFO    StreamThr :373443 [internal.py:wandb_internal():86] W&B internal server running at pid: 373443, started at: 2024-05-21 15:39:58.958931
+2024-05-21 15:39:58,960 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status
+2024-05-21 15:39:58,974 INFO    WriterThread:373443 [datastore.py:open_for_write():87] open: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/run-6amgf7ca.wandb
+2024-05-21 15:39:58,974 DEBUG   SenderThread:373443 [sender.py:send():382] send: header
+2024-05-21 15:39:58,988 DEBUG   SenderThread:373443 [sender.py:send():382] send: run
+2024-05-21 15:39:59,431 INFO    SenderThread:373443 [dir_watcher.py:__init__():211] watching files in: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files
+2024-05-21 15:39:59,431 INFO    SenderThread:373443 [sender.py:_start_run_threads():1136] run started: 6amgf7ca with start time 1716298798.961386
+2024-05-21 15:39:59,443 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: check_version
+2024-05-21 15:39:59,443 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: check_version
+2024-05-21 15:39:59,617 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: run_start
+2024-05-21 15:39:59,622 DEBUG   HandlerThread:373443 [system_info.py:__init__():27] System info init
+2024-05-21 15:39:59,622 DEBUG   HandlerThread:373443 [system_info.py:__init__():42] System info init done
+2024-05-21 15:39:59,622 INFO    HandlerThread:373443 [system_monitor.py:start():194] Starting system monitor
+2024-05-21 15:39:59,623 INFO    SystemMonitor:373443 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-21 15:39:59,623 INFO    HandlerThread:373443 [system_monitor.py:probe():214] Collecting system info
+2024-05-21 15:39:59,623 INFO    SystemMonitor:373443 [interfaces.py:start():190] Started cpu monitoring
+2024-05-21 15:39:59,624 INFO    SystemMonitor:373443 [interfaces.py:start():190] Started disk monitoring
+2024-05-21 15:39:59,624 INFO    SystemMonitor:373443 [interfaces.py:start():190] Started gpu monitoring
+2024-05-21 15:39:59,625 INFO    SystemMonitor:373443 [interfaces.py:start():190] Started memory monitoring
+2024-05-21 15:39:59,626 INFO    SystemMonitor:373443 [interfaces.py:start():190] Started network monitoring
+2024-05-21 15:39:59,647 DEBUG   HandlerThread:373443 [system_info.py:probe():151] Probing system
+2024-05-21 15:39:59,651 DEBUG   HandlerThread:373443 [system_info.py:_probe_git():136] Probing git
+2024-05-21 15:39:59,667 DEBUG   HandlerThread:373443 [system_info.py:_probe_git():144] Probing git done
+2024-05-21 15:39:59,668 DEBUG   HandlerThread:373443 [system_info.py:probe():199] Probing system done
+2024-05-21 15:39:59,668 DEBUG   HandlerThread:373443 [system_monitor.py:probe():223] {'os': 'Linux-4.18.0-425.3.1.el8.x86_64-x86_64-with-glibc2.28', 'python': '3.12.2', 'heartbeatAt': '2024-05-21T13:39:59.647769', 'startedAt': '2024-05-21T13:39:58.436542', 'docker': None, 'cuda': None, 'args': ('-gene2id', 'gene2ind.txt', '-input_folder', '../data/CL_PDCs2018_expression_brain/', '-output_folder', '../results/CL_PDCs2018_expression_brain/', '-model_name', 'best_model_d.pt', '-predictions_name', 'ModelPerDrug_test_predictions.txt', '-labels_name', 'sparseGO_test.txt', '-ontology_name', 'sparseGO_ont.txt', '-genomics_name', 'cell2expression_quartile.txt', '-project', 'CL_PDCs2018_expression_quartile', '-druginput_name', 'drug2fingerprint.txt'), 'state': 'running', 'program': '/scratch/ksada/SparseGO4patients/cluster/../code/per_drug_correlation.py', 'codePathLocal': None, 'codePath': 'code/per_drug_correlation.py', 'git': {'remote': 'https://github.com/KatynaSada/SparseGO4patients.git', 'commit': '96a2c0169348b940731bda8fc3943a6ecbd649c0'}, 'email': 'ksada@unav.es', 'root': '/scratch/ksada/SparseGO4patients', 'host': 'hyperion-074', 'username': 'ksada', 'executable': '/scratch/ksada/envs/SparseGO/bin/python', 'cpu_count': 48, 'cpu_count_logical': 48, 'cpu_freq': {'current': 3.0273541666666666, 'min': 1200.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.706, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3.0, 'min': 1200.0, 'max': 4000.0}], 'disk': {'/': {'total': 49.9755859375, 'used': 11.852554321289062}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 92.78815841674805}}
+2024-05-21 15:39:59,668 INFO    HandlerThread:373443 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-21 15:39:59,668 INFO    HandlerThread:373443 [system_monitor.py:probe():227] Publishing system info
+2024-05-21 15:39:59,668 DEBUG   HandlerThread:373443 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-05-21 15:40:00,433 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_created():271] file/dir created: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/conda-environment.yaml
+2024-05-21 15:40:03,359 DEBUG   HandlerThread:373443 [system_info.py:_save_conda():220] Saving conda packages done
+2024-05-21 15:40:03,360 INFO    HandlerThread:373443 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-21 15:40:03,367 DEBUG   SenderThread:373443 [sender.py:send():382] send: files
+2024-05-21 15:40:03,367 INFO    SenderThread:373443 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-05-21 15:40:03,376 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-21 15:40:03,377 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:40:03,377 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: python_packages
+2024-05-21 15:40:03,377 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:40:03,378 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:40:03,436 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/conda-environment.yaml
+2024-05-21 15:40:03,436 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_created():271] file/dir created: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/requirements.txt
+2024-05-21 15:40:03,436 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_created():271] file/dir created: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-metadata.json
+2024-05-21 15:40:03,764 DEBUG   SenderThread:373443 [sender.py:send():382] send: telemetry
+2024-05-21 15:40:04,097 INFO    wandb-upload_0:373443 [upload_job.py:push():131] Uploaded file /tmp/tmpyktlh6t6wandb/0yg76esv-wandb-metadata.json
+2024-05-21 15:40:04,764 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:09,765 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:14,766 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:15,452 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_created():271] file/dir created: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:40:17,456 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:40:18,377 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:40:18,377 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:40:18,379 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:40:20,603 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:25,609 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:30,611 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:31,479 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/config.yaml
+2024-05-21 15:40:33,393 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:40:33,393 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:40:33,393 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:40:36,581 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:41,583 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:46,584 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:48,516 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:40:48,517 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:40:48,517 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:40:51,730 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:56,738 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:40:59,626 DEBUG   SystemMonitor:373443 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-21 15:40:59,627 DEBUG   SenderThread:373443 [sender.py:send():382] send: stats
+2024-05-21 15:41:02,628 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:05,354 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:41:05,354 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:41:05,354 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:41:08,570 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:13,571 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:18,572 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:20,986 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:41:20,987 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 15:41:20,987 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 15:41:23,771 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:28,783 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:29,628 DEBUG   SenderThread:373443 [sender.py:send():382] send: stats
+2024-05-21 15:41:30,717 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 15:41:30,718 DEBUG   SenderThread:373443 [sender.py:send():382] send: history
+2024-05-21 15:41:30,719 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 15:41:30,719 INFO    SenderThread:373443 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-21 15:41:30,965 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:30,965 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:31,610 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_created():271] file/dir created: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-summary.json
+2024-05-21 15:41:31,764 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact means_pearson_drug - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NDYz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc2OA==', 'latestArtifact': None}}
+2024-05-21 15:41:32,220 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:32,221 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:32,555 INFO    wandb-upload_0:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmp1rp0aw8u
+2024-05-21 15:41:32,587 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact WaterfallDrugsSparseGO_pearson - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NDcy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc3Ng==', 'latestArtifact': None}}
+2024-05-21 15:41:32,767 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:32,767 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:32,780 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 15:41:33,015 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:33,094 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact top10sparse_pearson - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NDc2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc4Mg==', 'latestArtifact': None}}
+2024-05-21 15:41:33,095 DEBUG   SenderThread:373443 [sender.py:send():382] send: history
+2024-05-21 15:41:33,095 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 15:41:33,096 INFO    SenderThread:373443 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-21 15:41:33,096 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:33,495 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact means_spearman_drug - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NDgx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc4Mw==', 'latestArtifact': None}}
+2024-05-21 15:41:33,613 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:41:33,614 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-summary.json
+2024-05-21 15:41:34,086 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:34,086 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:34,144 INFO    wandb-upload_0:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmp0hhofj0s
+2024-05-21 15:41:34,211 INFO    wandb-upload_2:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmpnotcich2
+2024-05-21 15:41:34,487 INFO    wandb-upload_1:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmp3_ny_vd9
+2024-05-21 15:41:34,489 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact WaterfallDrugsSparseGO_spearman - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NDkx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc4Ng==', 'latestArtifact': None}}
+2024-05-21 15:41:34,489 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:34,588 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:34,588 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:35,071 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact top10sparse_spearman - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NTAx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc4Nw==', 'latestArtifact': None}}
+2024-05-21 15:41:35,616 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:41:35,673 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: log_artifact
+2024-05-21 15:41:35,673 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: log_artifact
+2024-05-21 15:41:36,000 INFO    SenderThread:373443 [sender.py:send_request_log_artifact():1470] logged artifact density_plot - {'id': 'QXJ0aWZhY3Q6ODQ0ODA3NTE1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzU2NTgwNw==', 'latestArtifact': None}}
+2024-05-21 15:41:36,000 DEBUG   SenderThread:373443 [sender.py:send():382] send: telemetry
+2024-05-21 15:41:36,001 DEBUG   SenderThread:373443 [sender.py:send():382] send: exit
+2024-05-21 15:41:36,001 INFO    SenderThread:373443 [sender.py:send_exit():589] handling exit code: 0
+2024-05-21 15:41:36,001 INFO    SenderThread:373443 [sender.py:send_exit():591] handling runtime: 96
+2024-05-21 15:41:36,002 INFO    SenderThread:373443 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-21 15:41:36,003 INFO    SenderThread:373443 [sender.py:send_exit():597] send defer
+2024-05-21 15:41:36,003 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,003 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-21 15:41:36,004 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,004 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-21 15:41:36,004 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 1
+2024-05-21 15:41:36,004 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,005 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-21 15:41:36,005 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,005 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-21 15:41:36,005 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 2
+2024-05-21 15:41:36,005 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,006 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-21 15:41:36,006 INFO    HandlerThread:373443 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-21 15:41:36,006 DEBUG   SystemMonitor:373443 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-21 15:41:36,017 DEBUG   SystemMonitor:373443 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-21 15:41:36,017 INFO    HandlerThread:373443 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-21 15:41:36,018 INFO    HandlerThread:373443 [interfaces.py:finish():202] Joined disk monitor
+2024-05-21 15:41:36,093 INFO    HandlerThread:373443 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-21 15:41:36,093 INFO    HandlerThread:373443 [interfaces.py:finish():202] Joined memory monitor
+2024-05-21 15:41:36,093 INFO    HandlerThread:373443 [interfaces.py:finish():202] Joined network monitor
+2024-05-21 15:41:36,093 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,094 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-21 15:41:36,094 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 3
+2024-05-21 15:41:36,094 DEBUG   SenderThread:373443 [sender.py:send():382] send: stats
+2024-05-21 15:41:36,094 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,094 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-21 15:41:36,095 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,095 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-21 15:41:36,095 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 4
+2024-05-21 15:41:36,095 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,095 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-21 15:41:36,095 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,095 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-21 15:41:36,096 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 5
+2024-05-21 15:41:36,096 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,096 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-21 15:41:36,096 DEBUG   SenderThread:373443 [sender.py:send():382] send: summary
+2024-05-21 15:41:36,098 INFO    SenderThread:373443 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-05-21 15:41:36,098 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,098 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-21 15:41:36,099 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 6
+2024-05-21 15:41:36,099 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,099 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-21 15:41:36,099 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,099 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-21 15:41:36,101 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 15:41:36,272 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 7
+2024-05-21 15:41:36,272 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:36,272 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-21 15:41:36,272 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:36,273 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-21 15:41:36,618 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/config.yaml
+2024-05-21 15:41:36,619 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-summary.json
+2024-05-21 15:41:36,678 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 15:41:37,151 INFO    wandb-upload_0:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmp7gdx5a1o
+2024-05-21 15:41:37,423 INFO    wandb-upload_2:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmpwp1vv2vz
+2024-05-21 15:41:37,571 INFO    wandb-upload_1:373443 [upload_job.py:push():89] Uploaded file /home/ksada/.local/share/wandb/artifacts/staging/tmp82l6nsdi
+2024-05-21 15:41:37,620 INFO    Thread-12 :373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:41:38,679 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 8
+2024-05-21 15:41:38,680 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: poll_exit
+2024-05-21 15:41:38,680 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:38,680 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-21 15:41:38,680 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:38,680 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-21 15:41:38,681 INFO    SenderThread:373443 [job_builder.py:build():296] Attempting to build job artifact
+2024-05-21 15:41:38,682 INFO    SenderThread:373443 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-05-21 15:41:38,683 INFO    SenderThread:373443 [job_builder.py:build():402] adding wandb-job metadata file
+2024-05-21 15:41:38,691 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 9
+2024-05-21 15:41:38,691 DEBUG   SenderThread:373443 [sender.py:send():382] send: artifact
+2024-05-21 15:41:38,691 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:38,693 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-21 15:41:39,210 INFO    SenderThread:373443 [sender.py:send_artifact():1494] sent artifact job-https___github.com_KatynaSada_SparseGO4patients.git_code_per_drug_correlation.py - {'id': 'QXJ0aWZhY3Q6ODQ0MjM1NTQ2', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NzM4Mzc5MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODQ0NjAwNTc3', 'versionIndex': 1}}}
+2024-05-21 15:41:39,210 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:39,210 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-21 15:41:39,210 INFO    SenderThread:373443 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-21 15:41:39,623 INFO    SenderThread:373443 [dir_watcher.py:_on_file_modified():288] file/dir modified: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:41:39,624 INFO    SenderThread:373443 [dir_watcher.py:finish():388] scan: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files
+2024-05-21 15:41:39,624 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/config.yaml config.yaml
+2024-05-21 15:41:39,625 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/requirements.txt requirements.txt
+2024-05-21 15:41:39,626 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log output.log
+2024-05-21 15:41:39,628 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-metadata.json wandb-metadata.json
+2024-05-21 15:41:39,629 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-summary.json wandb-summary.json
+2024-05-21 15:41:39,629 INFO    SenderThread:373443 [dir_watcher.py:finish():402] scan save: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/conda-environment.yaml conda-environment.yaml
+2024-05-21 15:41:39,631 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 10
+2024-05-21 15:41:39,632 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:39,632 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-21 15:41:39,632 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:39,632 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-05-21 15:41:39,633 INFO    SenderThread:373443 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 15:41:39,679 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 15:41:39,682 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: poll_exit
+2024-05-21 15:41:40,055 INFO    wandb-upload_1:373443 [upload_job.py:push():131] Uploaded file /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/requirements.txt
+2024-05-21 15:41:40,138 INFO    wandb-upload_0:373443 [upload_job.py:push():131] Uploaded file /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/config.yaml
+2024-05-21 15:41:40,141 INFO    wandb-upload_2:373443 [upload_job.py:push():131] Uploaded file /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/output.log
+2024-05-21 15:41:40,214 INFO    wandb-upload_3:373443 [upload_job.py:push():131] Uploaded file /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/wandb-summary.json
+2024-05-21 15:41:40,253 INFO    wandb-upload_4:373443 [upload_job.py:push():131] Uploaded file /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/files/conda-environment.yaml
+2024-05-21 15:41:40,453 INFO    Thread-11 (_thread_body):373443 [sender.py:transition_state():617] send defer: 11
+2024-05-21 15:41:40,454 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:40,454 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-21 15:41:40,454 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:40,454 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-05-21 15:41:40,454 INFO    SenderThread:373443 [file_pusher.py:join():178] waiting for file pusher
+2024-05-21 15:41:40,454 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 12
+2024-05-21 15:41:40,455 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:40,455 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-21 15:41:40,455 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:40,455 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-05-21 15:41:40,455 INFO    SenderThread:373443 [file_stream.py:finish():595] file stream finish called
+2024-05-21 15:41:40,621 INFO    SenderThread:373443 [file_stream.py:finish():599] file stream finish is done
+2024-05-21 15:41:40,622 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 13
+2024-05-21 15:41:40,622 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:40,622 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-21 15:41:40,622 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:40,622 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-05-21 15:41:40,622 INFO    SenderThread:373443 [sender.py:transition_state():617] send defer: 14
+2024-05-21 15:41:40,623 DEBUG   SenderThread:373443 [sender.py:send():382] send: final
+2024-05-21 15:41:40,623 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 15:41:40,623 DEBUG   SenderThread:373443 [sender.py:send():382] send: footer
+2024-05-21 15:41:40,623 INFO    HandlerThread:373443 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-21 15:41:40,623 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: defer
+2024-05-21 15:41:40,623 INFO    SenderThread:373443 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-05-21 15:41:40,624 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 15:41:40,624 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: poll_exit
+2024-05-21 15:41:40,625 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 15:41:40,625 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: server_info
+2024-05-21 15:41:40,625 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: server_info
+2024-05-21 15:41:40,666 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-21 15:41:40,667 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-21 15:41:40,667 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: job_info
+2024-05-21 15:41:40,774 DEBUG   SenderThread:373443 [sender.py:send_request():409] send_request: job_info
+2024-05-21 15:41:40,775 DEBUG   HandlerThread:373443 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-21 15:41:40,775 INFO    HandlerThread:373443 [handler.py:finish():869] shutting down handler
+2024-05-21 15:41:41,667 INFO    WriterThread:373443 [datastore.py:close():296] close: /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_153958-6amgf7ca/run-6amgf7ca.wandb
+2024-05-21 15:41:41,775 INFO    SenderThread:373443 [sender.py:finish():1572] shutting down sender
+2024-05-21 15:41:41,775 INFO    SenderThread:373443 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 15:41:41,776 INFO    SenderThread:373443 [file_pusher.py:join():178] waiting for file pusher

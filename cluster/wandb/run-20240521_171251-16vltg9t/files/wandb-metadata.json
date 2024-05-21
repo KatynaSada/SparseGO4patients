@@ -1,0 +1,323 @@
+{
+    "os": "Linux-4.18.0-425.3.1.el8.x86_64-x86_64-with-glibc2.28",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-21T15:12:52.599084",
+    "startedAt": "2024-05-21T15:12:51.738659",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-onto",
+        "../data/PDCs2018_expression_LELO/samples1/sparseGO_ont_PDCs2018.txt",
+        "-gene2id",
+        "../data/PDCs2018_expression_LELO/samples1/gene2ind_PDCs2018.txt",
+        "-drug2id",
+        "../data/PDCs2018_expression_LELO/samples1/drug2ind_PDCs2018.txt",
+        "-cell2id",
+        "../data/PDCs2018_expression_LELO/samples1/cell2ind_PDCs2018.txt",
+        "-train",
+        "../data/PDCs2018_expression_LELO/samples1/sparseGO_train.txt",
+        "-val",
+        "../data/PDCs2018_expression_LELO/samples1/sparseGO_val.txt",
+        "-modeldir",
+        "../results/PDCs2018_expression_LELO_pretrained/samples1/",
+        "-genotype",
+        "../data/PDCs2018_expression_LELO/samples1/cell2expression_PDCs2018_quartile.txt",
+        "-fingerprint",
+        "../data/PDCs2018_expression_LELO/samples1/drug2fingerprint_PDCs2018.txt",
+        "-drugs_names",
+        "../data/PDCs2018_expression_LELO/samples1/compound_names_PDCs2018.txt",
+        "-epoch",
+        "300",
+        "-predict",
+        "../data/PDCs2018_expression_LELO/samples1/sparseGO_test.txt",
+        "-result",
+        "../results/PDCs2018_expression_LELO_pretrained/samples1/",
+        "-project",
+        "Hyper_PDCs2018_expression_transfer_LELO",
+        "-pretrained",
+        "../results/CL_PDCs2018_expression_brain/allsamples/last_model.pt",
+        "-sweep_name",
+        "samples1",
+        "-tags",
+        "quartile,brain"
+    ],
+    "state": "running",
+    "program": "/scratch/ksada/SparseGO4patients/cluster/../code/train_transfer.py",
+    "codePathLocal": null,
+    "codePath": "code/train_transfer.py",
+    "git": {
+        "remote": "https://github.com/KatynaSada/SparseGO4patients.git",
+        "commit": "96a2c0169348b940731bda8fc3943a6ecbd649c0"
+    },
+    "email": "ksada@unav.es",
+    "root": "/scratch/ksada/SparseGO4patients",
+    "host": "hyperion-074",
+    "username": "ksada",
+    "executable": "/scratch/ksada/envs/SparseGO/bin/python",
+    "cpu_count": 48,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 3.0072291666666664,
+        "min": 1200.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.347,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 49.9755859375,
+            "used": 11.852764129638672
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 92.78815841674805
+    }
+}

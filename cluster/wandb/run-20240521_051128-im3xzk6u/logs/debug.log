@@ -1,0 +1,56 @@
+2024-05-21 05:11:31,088 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-05-21 05:11:31,105 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Configure stats pid to 3723158
+2024-05-21 05:11:31,105 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Loading settings from /home/ksada/.config/wandb/settings
+2024-05-21 05:11:31,106 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Loading settings from /scratch/ksada/SparseGO4patients/cluster/wandb/settings
+2024-05-21 05:11:31,106 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'katynasada', 'project': 'CL_PDCs2018_expression_quartile', 'root_dir': '/scratch/ksada/SparseGO4patients/cluster', 'sweep_id': '4xzqwobd', 'run_id': 'im3xzk6u', 'sweep_param_path': '/scratch/ksada/SparseGO4patients/cluster/wandb/sweep-4xzqwobd/config-im3xzk6u.yaml'}
+2024-05-21 05:11:31,106 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-21 05:11:31,106 INFO    Thread-2 (_run_job):3723158 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'code/train.py', 'program_abspath': '/scratch/ksada/SparseGO4patients/code/train.py', 'program': '/scratch/ksada/SparseGO4patients/cluster/../code/train.py'}
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:_log_setup():526] Logging user logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_051128-im3xzk6u/logs/debug.log
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:_log_setup():527] Logging internal logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_051128-im3xzk6u/logs/debug-internal.log
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():566] calling init triggers
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():573] wandb.init called with sweep_config: {'batch_size': 40000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+config: {}
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():616] starting backend
+2024-05-21 05:11:31,107 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():620] setting up manager
+2024-05-21 05:11:31,120 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():628] backend started and connected
+2024-05-21 05:11:31,137 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 40000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+2024-05-21 05:11:31,138 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():720] updated telemetry
+2024-05-21 05:11:31,151 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-05-21 05:11:31,576 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_on_init():2262] communicating current version
+2024-05-21 05:11:31,732 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-21 05:11:31,732 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():804] starting run threads in backend
+2024-05-21 05:11:35,456 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_console_start():2241] atexit reg
+2024-05-21 05:11:35,457 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-05-21 05:11:35,457 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-05-21 05:11:35,457 INFO    Thread-2 (_run_job):3723158 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-05-21 05:11:35,458 INFO    Thread-2 (_run_job):3723158 [wandb_init.py:init():847] run started, returning control to user process
+2024-05-21 09:52:16,182 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():373] 429 response executing GraphQL.
+2024-05-21 09:52:16,194 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():374] {"error":"rate limit exceeded"}
+2024-05-21 09:52:17,361 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():373] 429 response executing GraphQL.
+2024-05-21 09:52:17,381 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():374] {"error":"rate limit exceeded"}
+2024-05-21 09:52:19,583 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():373] 429 response executing GraphQL.
+2024-05-21 09:52:19,584 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():374] {"error":"rate limit exceeded"}
+2024-05-21 09:52:19,584 INFO    Thread-1 (_heartbeat):3723158 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/wandb/sdk/internal/internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.wandb.ai/graphql
+2024-05-21 09:52:24,145 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():373] 429 response executing GraphQL.
+2024-05-21 09:52:24,167 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():374] {"error":"rate limit exceeded"}
+2024-05-21 09:52:32,546 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():373] 429 response executing GraphQL.
+2024-05-21 09:52:32,546 ERROR   Thread-1 (_heartbeat):3723158 [internal_api.py:execute():374] {"error":"rate limit exceeded"}

@@ -1,0 +1,14 @@
+p_drop_final: 0  p_drop_genes: 0  p_drop_terms: 0  p_drop_drugs: 0
+Number of neurons per GO term:  6
+Number of neurons of final GO term:  30
+Number of drug neurons:  [200, 100, 50]
+Number of final neurons:  50
+Number of term-term hierarchy levels: 9
+Model created in 0m 27s
+Momentum:  0.9
+Decay rate:  0.002
+Training started...
+Training samples:  476504
+Val samples:  5000
+-----------------
+/scratch/ksada/SparseGO4patients/code/sparseLinearNew.py:246: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1708025845206/work/torch/csrc/utils/tensor_new.cpp:618.)

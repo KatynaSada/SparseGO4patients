@@ -1,0 +1,9 @@
+/scratch/ksada/SparseGO4patients/code/sparseLinearNew.py:246: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1708025845206/work/torch/csrc/utils/tensor_new.cpp:618.)
+  sparseMatrix = torch.sparse.FloatTensor(
+Average pearson correlations of all drugs:  0.12281519632320582
+Average spearman correlations of all drugs:  0.11937964669510541
+Overall spearman corr. = 0.4726
+Overall pearson corr. = 0.5648
+Overall MSE loss = 0.0304
+Average spearman corr. = 0.402
+Average pearson corr. = 0.4567

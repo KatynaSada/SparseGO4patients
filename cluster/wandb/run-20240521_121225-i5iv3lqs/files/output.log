@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/scratch/ksada/SparseGO4patients/cluster/../code/per_drug_correlation.py", line 162, in <module>
+    model = torch.load(load, map_location=device)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/torch/serialization.py", line 998, in load
+    with _open_file_like(f, 'rb') as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/torch/serialization.py", line 445, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/ksada/envs/SparseGO/lib/python3.12/site-packages/torch/serialization.py", line 426, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../results/CL_PDCs2018_expression_brain/allsamples/best_model_d.pt'

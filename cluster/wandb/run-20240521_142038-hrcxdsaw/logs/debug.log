@@ -1,0 +1,34 @@
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Configure stats pid to 364691
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Loading settings from /home/ksada/.config/wandb/settings
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Loading settings from /scratch/ksada/SparseGO4patients/cluster/wandb/settings
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'miramon_team', 'project': 'CL_PDCs2018_expression_quartile', 'root_dir': '/scratch/ksada/SparseGO4patients/cluster', 'sweep_id': 'ipkluf0w', 'run_id': 'hrcxdsaw', 'sweep_param_path': '/scratch/ksada/SparseGO4patients/cluster/wandb/sweep-ipkluf0w/config-hrcxdsaw.yaml'}
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-21 14:20:38,661 INFO    Thread-2 (_run_job):364691 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'code/train.py', 'program_abspath': '/scratch/ksada/SparseGO4patients/code/train.py', 'program': '/scratch/ksada/SparseGO4patients/cluster/../code/train.py'}
+2024-05-21 14:20:38,662 INFO    Thread-2 (_run_job):364691 [wandb_init.py:_log_setup():526] Logging user logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_142038-hrcxdsaw/logs/debug.log
+2024-05-21 14:20:38,662 INFO    Thread-2 (_run_job):364691 [wandb_init.py:_log_setup():527] Logging internal logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240521_142038-hrcxdsaw/logs/debug-internal.log
+2024-05-21 14:20:38,662 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():566] calling init triggers
+2024-05-21 14:20:38,662 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():573] wandb.init called with sweep_config: {'batch_size': 20000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+config: {}
+2024-05-21 14:20:38,662 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():616] starting backend
+2024-05-21 14:20:38,663 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():620] setting up manager
+2024-05-21 14:20:38,706 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():628] backend started and connected
+2024-05-21 14:20:38,723 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 20000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+2024-05-21 14:20:38,724 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():720] updated telemetry
+2024-05-21 14:20:38,737 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-05-21 14:20:39,195 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_on_init():2262] communicating current version
+2024-05-21 14:20:39,348 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-21 14:20:39,349 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():804] starting run threads in backend
+2024-05-21 14:20:45,089 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_console_start():2241] atexit reg
+2024-05-21 14:20:45,090 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-05-21 14:20:45,090 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-05-21 14:20:45,090 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-05-21 14:20:45,091 INFO    Thread-2 (_run_job):364691 [wandb_init.py:init():847] run started, returning control to user process
+2024-05-21 14:46:49,559 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_finish():1970] finishing run miramon_team/CL_PDCs2018_expression_quartile/hrcxdsaw
+2024-05-21 14:46:49,560 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-05-21 14:46:49,561 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_restore():2193] restore
+2024-05-21 14:46:49,561 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_restore():2199] restore done
+2024-05-21 14:46:55,231 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-05-21 14:46:55,231 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-05-21 14:46:55,237 INFO    Thread-2 (_run_job):364691 [wandb_run.py:_footer_sync_info():3825] logging synced files

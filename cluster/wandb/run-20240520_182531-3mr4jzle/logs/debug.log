@@ -1,0 +1,46 @@
+2024-05-20 18:25:31,917 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-05-20 18:25:31,918 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Configure stats pid to 3712060
+2024-05-20 18:25:31,918 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Loading settings from /home/ksada/.config/wandb/settings
+2024-05-20 18:25:31,918 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Loading settings from /scratch/ksada/SparseGO4patients/cluster/wandb/settings
+2024-05-20 18:25:31,918 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'katynasada', 'project': 'CL_PDCs2018_expression_quartile', 'root_dir': '/scratch/ksada/SparseGO4patients/cluster', 'sweep_id': '74akt1gu', 'run_id': '3mr4jzle', 'sweep_param_path': '/scratch/ksada/SparseGO4patients/cluster/wandb/sweep-74akt1gu/config-3mr4jzle.yaml'}
+2024-05-20 18:25:31,918 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-20 18:25:31,919 INFO    Thread-2 (_run_job):3712060 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'code/train.py', 'program_abspath': '/scratch/ksada/SparseGO4patients/code/train.py', 'program': '/scratch/ksada/SparseGO4patients/cluster/../code/train.py'}
+2024-05-20 18:25:31,919 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:_log_setup():526] Logging user logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240520_182531-3mr4jzle/logs/debug.log
+2024-05-20 18:25:31,919 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:_log_setup():527] Logging internal logs to /scratch/ksada/SparseGO4patients/cluster/wandb/run-20240520_182531-3mr4jzle/logs/debug-internal.log
+2024-05-20 18:25:31,919 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():566] calling init triggers
+2024-05-20 18:25:31,920 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():573] wandb.init called with sweep_config: {'batch_size': 40000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+config: {}
+2024-05-20 18:25:31,920 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():616] starting backend
+2024-05-20 18:25:31,920 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():620] setting up manager
+2024-05-20 18:25:31,997 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():628] backend started and connected
+2024-05-20 18:25:32,014 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 40000, 'criterion': 'MSELoss', 'decay_rate': 0.002, 'drug_neurons': [200, 100, 50], 'epochs': 300, 'learning_rate': 0.1, 'momentum': 0.9, 'num_neurons_final': 50, 'num_neurons_final_GO': 30, 'num_neurons_per_GO': 6, 'optimizer': 'sgd', 'p_drop_drugs': 0, 'p_drop_final': 0, 'p_drop_genes': 0, 'p_drop_terms': 0}
+2024-05-20 18:25:32,015 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():720] updated telemetry
+2024-05-20 18:25:32,028 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-05-20 18:25:32,526 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_on_init():2262] communicating current version
+2024-05-20 18:25:32,678 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-20 18:25:32,678 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():804] starting run threads in backend
+2024-05-20 18:25:39,486 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_console_start():2241] atexit reg
+2024-05-20 18:25:39,487 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-05-20 18:25:39,487 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-05-20 18:25:39,487 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-05-20 18:25:39,488 INFO    Thread-2 (_run_job):3712060 [wandb_init.py:init():847] run started, returning control to user process
+2024-05-20 21:00:10,443 ERROR   Thread-1 (_heartbeat):3712060 [internal_api.py:execute():373] 502 response executing GraphQL.
+2024-05-20 21:00:10,571 ERROR   Thread-1 (_heartbeat):3712060 [internal_api.py:execute():374] 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2024-05-21 05:08:39,234 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_finish():1970] finishing run katynasada/CL_PDCs2018_expression_quartile/3mr4jzle
+2024-05-21 05:08:39,263 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 1
+2024-05-21 05:08:39,263 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_restore():2193] restore
+2024-05-21 05:08:39,263 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_restore():2199] restore done
+2024-05-21 05:08:46,945 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-05-21 05:08:46,950 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-05-21 05:08:46,955 INFO    Thread-2 (_run_job):3712060 [wandb_run.py:_footer_sync_info():3825] logging synced files

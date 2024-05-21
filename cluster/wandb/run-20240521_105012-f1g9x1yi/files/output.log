@@ -1,0 +1,9 @@
+/scratch/ksada/SparseGO4patients/code/sparseLinearNew.py:246: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1708025845206/work/torch/csrc/utils/tensor_new.cpp:618.)
+  sparseMatrix = torch.sparse.FloatTensor(
+Average pearson correlations of all drugs:  0.26511676875015333
+Average spearman correlations of all drugs:  0.24834317628539399
+Traceback (most recent call last):
+  File "/scratch/ksada/SparseGO4patients/cluster/../code/per_drug_correlation.py", line 592, in <module>
+    with open(file_predictions, 'r') as fi:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../results/CL_PDCs2018_expression/allsamples/ModelPerDrug_test_predictions.txt'

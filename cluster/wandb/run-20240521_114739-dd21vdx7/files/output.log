@@ -1,0 +1,71 @@
+p_drop_final: 0  p_drop_genes: 0  p_drop_terms: 0  p_drop_drugs: 0
+Number of neurons per GO term:  6
+Number of neurons of final GO term:  30
+Number of drug neurons:  [200, 100, 50]
+Number of final neurons:  50
+Number of term-term hierarchy levels: 9
+Model created in 0m 32s
+Let's use 2 GPUs!
+Momentum:  0.9
+Decay rate:  0.002
+Training started...
+Training samples:  601880
+Val samples:  5000
+-----------------
+/scratch/ksada/SparseGO4patients/code/sparseLinearNew.py:246: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1708025845206/work/torch/csrc/utils/tensor_new.cpp:618.)
+  sparseMatrix = torch.sparse.FloatTensor(
+Epoch 1
+L.r.  0.1
+Train Loss: 11.8937; Train Corr (pear.): -0.02948; Train Corr (sp.): -0.04352; Per drug corr.: -0.00294
+Allocated after train: 0.204 GB
+Val Loss: 0.0590; Val Corr (pear.): -0.09472; Val Corr (sp.): -0.16060; Per drug corr.: -0.06805
+Allocated after val: 0.414 GB
+Epoch time: 2m 34s
+-----------------
+Epoch 2
+L.r.  0.0998
+Train Loss: 1.5725; Train Corr (pear.): 0.18421; Train Corr (sp.): 0.14654; Per drug corr.: 0.01831
+Allocated after train: 0.205 GB
+Val Loss: 0.0509; Val Corr (pear.): 0.49193; Val Corr (sp.): 0.40058; Per drug corr.: 0.03601
+Allocated after val: 0.415 GB
+Epoch time: 2m 30s
+-----------------
+Epoch 3
+L.r.  0.099602
+Train Loss: 1.1202; Train Corr (pear.): 0.54427; Train Corr (sp.): 0.35725; Per drug corr.: 0.01082
+Allocated after train: 0.205 GB
+Val Loss: 0.0374; Val Corr (pear.): 0.66957; Val Corr (sp.): 0.52391; Per drug corr.: 0.08746
+Allocated after val: 0.415 GB
+Epoch time: 2m 29s
+-----------------
+Epoch 4
+L.r.  0.099404
+Train Loss: 0.9232; Train Corr (pear.): 0.65028; Train Corr (sp.): 0.43654; Per drug corr.: 0.03016
+Allocated after train: 0.205 GB
+Val Loss: 0.0337; Val Corr (pear.): 0.71681; Val Corr (sp.): 0.56994; Per drug corr.: 0.10676
+Allocated after val: 0.415 GB
+Epoch time: 2m 27s
+-----------------
+Epoch 5
+L.r.  0.099206
+Train Loss: 0.8580; Train Corr (pear.): 0.68211; Train Corr (sp.): 0.46702; Per drug corr.: 0.04627
+Allocated after train: 0.205 GB
+Val Loss: 0.0345; Val Corr (pear.): 0.73178; Val Corr (sp.): 0.58592; Per drug corr.: 0.12218
+Allocated after val: 0.415 GB
+Epoch time: 2m 28s
+-----------------
+Epoch 6
+L.r.  0.09901
+Train Loss: 0.8269; Train Corr (pear.): 0.69469; Train Corr (sp.): 0.48173; Per drug corr.: 0.05972
+Allocated after train: 0.205 GB
+Val Loss: 0.0328; Val Corr (pear.): 0.72883; Val Corr (sp.): 0.58493; Per drug corr.: 0.12222
+Allocated after val: 0.415 GB
+Epoch time: 2m 28s
+-----------------
+Epoch 7
+L.r.  0.098814
+Train Loss: 0.7663; Train Corr (pear.): 0.72034; Train Corr (sp.): 0.50223; Per drug corr.: 0.07696
+Allocated after train: 0.205 GB
+Val Loss: 0.0306; Val Corr (pear.): 0.75153; Val Corr (sp.): 0.59702; Per drug corr.: 0.12353
+Allocated after val: 0.415 GB
+Epoch time: 2m 30s

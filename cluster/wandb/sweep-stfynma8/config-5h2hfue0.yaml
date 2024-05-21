@@ -1,0 +1,16 @@
+wandb_version: 1
+
+batch_size:
+  value: 2000
+criterion:
+  value: MSELoss
+decay_rate:
+  value: 0.01
+epochs:
+  value: 300
+learning_rate:
+  value: 0.1
+momentum:
+  value: 0.95
+optimizer:
+  value: sgd

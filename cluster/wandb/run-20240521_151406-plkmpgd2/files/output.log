@@ -1,0 +1,3635 @@
+p_drop_final: 0  p_drop_genes: 0  p_drop_terms: 0  p_drop_drugs: 0
+Number of neurons per GO term:  6
+Number of neurons of final GO term:  30
+Number of drug neurons:  [200, 100, 50]
+Number of final neurons:  50
+Number of term-term hierarchy levels: 9
+Model created in 0m 27s
+Let's use 2 GPUs!
+Momentum:  0.9
+Decay rate:  0.002
+Training started...
+Training samples:  17563
+Val samples:  7000
+-----------------
+/scratch/ksada/SparseGO4patients/code/sparseLinearNew.py:246: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /opt/conda/conda-bld/pytorch_1708025845206/work/torch/csrc/utils/tensor_new.cpp:618.)
+  sparseMatrix = torch.sparse.FloatTensor(
+Epoch 1
+L.r.  0.1
+Train Loss: 2.4137; Train Corr (pear.): -0.04692; Train Corr (sp.): -0.04451; Per drug corr.: 0.00417
+Allocated after train: 1.241 GB
+Val Loss: 1.5184; Val Corr (pear.): 0.00283; Val Corr (sp.): -0.02529; Per drug corr.: -0.00041
+Allocated after val: 0.54 GB
+Epoch time: 0m 11s
+-----------------
+Epoch 2
+L.r.  0.0998
+Train Loss: 1.5334; Train Corr (pear.): 0.05732; Train Corr (sp.): 0.04934; Per drug corr.: 0.06005
+Allocated after train: 1.249 GB
+Val Loss: 0.5022; Val Corr (pear.): 0.05742; Val Corr (sp.): 0.01796; Per drug corr.: -0.00249
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 3
+L.r.  0.099602
+Train Loss: 0.5203; Train Corr (pear.): 0.05126; Train Corr (sp.): 0.04805; Per drug corr.: 0.03977
+Allocated after train: 1.249 GB
+Val Loss: 0.0482; Val Corr (pear.): 0.13449; Val Corr (sp.): 0.07889; Per drug corr.: 0.00016
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 4
+L.r.  0.099404
+Train Loss: 0.0612; Train Corr (pear.): 0.11025; Train Corr (sp.): 0.11562; Per drug corr.: 0.07396
+Allocated after train: 1.249 GB
+Val Loss: 0.3276; Val Corr (pear.): 0.23152; Val Corr (sp.): 0.14881; Per drug corr.: 0.00012
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 5
+L.r.  0.099206
+Train Loss: 0.3321; Train Corr (pear.): 0.16372; Train Corr (sp.): 0.17724; Per drug corr.: 0.10196
+Allocated after train: 1.249 GB
+Val Loss: 0.8938; Val Corr (pear.): 0.32777; Val Corr (sp.): 0.20902; Per drug corr.: -0.00010
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 6
+L.r.  0.09901
+Train Loss: 0.8525; Train Corr (pear.): 0.25507; Train Corr (sp.): 0.22161; Per drug corr.: 0.12495
+Allocated after train: 1.249 GB
+Val Loss: 1.1692; Val Corr (pear.): 0.39150; Val Corr (sp.): 0.25353; Per drug corr.: 0.00145
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 7
+L.r.  0.098814
+Train Loss: 1.1028; Train Corr (pear.): 0.29962; Train Corr (sp.): 0.25358; Per drug corr.: 0.13416
+Allocated after train: 1.249 GB
+Val Loss: 0.9656; Val Corr (pear.): 0.42721; Val Corr (sp.): 0.28690; Per drug corr.: 0.00000
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 8
+L.r.  0.098619
+Train Loss: 0.9365; Train Corr (pear.): 0.26233; Train Corr (sp.): 0.25121; Per drug corr.: 0.12463
+Allocated after train: 1.249 GB
+Val Loss: 0.5062; Val Corr (pear.): -0.44721; Val Corr (sp.): -0.30814; Per drug corr.: -0.00185
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 9
+L.r.  0.098425
+Train Loss: 0.5488; Train Corr (pear.): -0.24008; Train Corr (sp.): -0.25070; Per drug corr.: -0.10960
+Allocated after train: 1.249 GB
+Val Loss: 0.1339; Val Corr (pear.): -0.45728; Val Corr (sp.): -0.31894; Per drug corr.: -0.00055
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 10
+L.r.  0.098232
+Train Loss: 0.2090; Train Corr (pear.): -0.23182; Train Corr (sp.): -0.24331; Per drug corr.: -0.09619
+Allocated after train: 1.249 GB
+Val Loss: 0.0646; Val Corr (pear.): -0.46098; Val Corr (sp.): -0.32267; Per drug corr.: -0.00321
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 11
+L.r.  0.098039
+Train Loss: 0.1290; Train Corr (pear.): -0.23998; Train Corr (sp.): -0.23959; Per drug corr.: -0.08390
+Allocated after train: 1.249 GB
+Val Loss: 0.2547; Val Corr (pear.): -0.45958; Val Corr (sp.): -0.32181; Per drug corr.: -0.01839
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 12
+L.r.  0.097847
+Train Loss: 0.2945; Train Corr (pear.): -0.25254; Train Corr (sp.): -0.22964; Per drug corr.: -0.03999
+Allocated after train: 1.249 GB
+Val Loss: 0.4691; Val Corr (pear.): -0.45143; Val Corr (sp.): -0.31584; Per drug corr.: -0.02221
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 13
+L.r.  0.097656
+Train Loss: 0.4737; Train Corr (pear.): -0.23708; Train Corr (sp.): -0.19564; Per drug corr.: -0.01164
+Allocated after train: 1.249 GB
+Val Loss: 0.5132; Val Corr (pear.): -0.43416; Val Corr (sp.): -0.30078; Per drug corr.: -0.00882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 14
+L.r.  0.097466
+Train Loss: 0.4949; Train Corr (pear.): -0.14778; Train Corr (sp.): -0.12899; Per drug corr.: 0.03795
+Allocated after train: 1.249 GB
+Val Loss: 0.3790; Val Corr (pear.): -0.40176; Val Corr (sp.): -0.27804; Per drug corr.: -0.00905
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 15
+L.r.  0.097276
+Train Loss: 0.3625; Train Corr (pear.): -0.06881; Train Corr (sp.): -0.09865; Per drug corr.: 0.03867
+Allocated after train: 1.249 GB
+Val Loss: 0.1872; Val Corr (pear.): 0.34017; Val Corr (sp.): 0.24076; Per drug corr.: 0.00671
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 16
+L.r.  0.097087
+Train Loss: 0.1956; Train Corr (pear.): 0.02370; Train Corr (sp.): 0.06972; Per drug corr.: -0.03422
+Allocated after train: 1.249 GB
+Val Loss: 0.0616; Val Corr (pear.): 0.23441; Val Corr (sp.): 0.17470; Per drug corr.: 0.01246
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 17
+L.r.  0.096899
+Train Loss: 0.0870; Train Corr (pear.): 0.00092; Train Corr (sp.): 0.02782; Per drug corr.: -0.01717
+Allocated after train: 1.249 GB
+Val Loss: 0.0609; Val Corr (pear.): 0.09919; Val Corr (sp.): 0.07411; Per drug corr.: 0.00116
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 18
+L.r.  0.096712
+Train Loss: 0.0802; Train Corr (pear.): -0.00902; Train Corr (sp.): -0.00556; Per drug corr.: -0.00587
+Allocated after train: 1.249 GB
+Val Loss: 0.1551; Val Corr (pear.): -0.01451; Val Corr (sp.): -0.02303; Per drug corr.: 0.01484
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 19
+L.r.  0.096525
+Train Loss: 0.1532; Train Corr (pear.): -0.00998; Train Corr (sp.): -0.02194; Per drug corr.: 0.00389
+Allocated after train: 1.249 GB
+Val Loss: 0.2575; Val Corr (pear.): -0.07384; Val Corr (sp.): -0.07410; Per drug corr.: 0.00468
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 20
+L.r.  0.096339
+Train Loss: 0.2298; Train Corr (pear.): -0.00103; Train Corr (sp.): -0.02488; Per drug corr.: 0.01187
+Allocated after train: 1.249 GB
+Val Loss: 0.2942; Val Corr (pear.): -0.07756; Val Corr (sp.): -0.07810; Per drug corr.: 0.01003
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 21
+L.r.  0.096154
+Train Loss: 0.2503; Train Corr (pear.): 0.01455; Train Corr (sp.): -0.01302; Per drug corr.: 0.01905
+Allocated after train: 1.249 GB
+Val Loss: 0.2493; Val Corr (pear.): -0.04162; Val Corr (sp.): -0.04757; Per drug corr.: -0.00457
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 22
+L.r.  0.095969
+Train Loss: 0.2085; Train Corr (pear.): 0.01278; Train Corr (sp.): -0.00064; Per drug corr.: 0.02112
+Allocated after train: 1.249 GB
+Val Loss: 0.1585; Val Corr (pear.): 0.01828; Val Corr (sp.): 0.00413; Per drug corr.: -0.01202
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 23
+L.r.  0.095785
+Train Loss: 0.1332; Train Corr (pear.): 0.01350; Train Corr (sp.): 0.00584; Per drug corr.: -0.00365
+Allocated after train: 1.249 GB
+Val Loss: 0.0777; Val Corr (pear.): 0.08666; Val Corr (sp.): 0.06428; Per drug corr.: -0.01331
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 24
+L.r.  0.095602
+Train Loss: 0.0680; Train Corr (pear.): 0.01649; Train Corr (sp.): 0.01632; Per drug corr.: -0.01712
+Allocated after train: 1.249 GB
+Val Loss: 0.0462; Val Corr (pear.): 0.15115; Val Corr (sp.): 0.11346; Per drug corr.: -0.01991
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 25
+L.r.  0.09542
+Train Loss: 0.0442; Train Corr (pear.): 0.01962; Train Corr (sp.): 0.02612; Per drug corr.: -0.01487
+Allocated after train: 1.249 GB
+Val Loss: 0.0660; Val Corr (pear.): -0.20496; Val Corr (sp.): -0.15405; Per drug corr.: 0.03007
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 26
+L.r.  0.095238
+Train Loss: 0.0627; Train Corr (pear.): -0.02275; Train Corr (sp.): -0.03270; Per drug corr.: 0.01381
+Allocated after train: 1.249 GB
+Val Loss: 0.1084; Val Corr (pear.): -0.24629; Val Corr (sp.): -0.18408; Per drug corr.: 0.04241
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 27
+L.r.  0.095057
+Train Loss: 0.0993; Train Corr (pear.): -0.02530; Train Corr (sp.): -0.03712; Per drug corr.: 0.01357
+Allocated after train: 1.249 GB
+Val Loss: 0.1379; Val Corr (pear.): -0.27607; Val Corr (sp.): -0.20408; Per drug corr.: 0.04804
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 28
+L.r.  0.094877
+Train Loss: 0.1233; Train Corr (pear.): -0.02502; Train Corr (sp.): -0.04354; Per drug corr.: 0.01097
+Allocated after train: 1.249 GB
+Val Loss: 0.1362; Val Corr (pear.): -0.29649; Val Corr (sp.): -0.21786; Per drug corr.: 0.05073
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 29
+L.r.  0.094697
+Train Loss: 0.1201; Train Corr (pear.): -0.02128; Train Corr (sp.): -0.05416; Per drug corr.: 0.01328
+Allocated after train: 1.249 GB
+Val Loss: 0.1096; Val Corr (pear.): -0.31022; Val Corr (sp.): -0.22660; Per drug corr.: 0.05001
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 30
+L.r.  0.094518
+Train Loss: 0.0994; Train Corr (pear.): -0.01773; Train Corr (sp.): -0.04803; Per drug corr.: 0.02203
+Allocated after train: 1.249 GB
+Val Loss: 0.0772; Val Corr (pear.): -0.31938; Val Corr (sp.): -0.23237; Per drug corr.: 0.05922
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 31
+L.r.  0.09434
+Train Loss: 0.0765; Train Corr (pear.): -0.01596; Train Corr (sp.): -0.03890; Per drug corr.: 0.02652
+Allocated after train: 1.249 GB
+Val Loss: 0.0556; Val Corr (pear.): -0.32524; Val Corr (sp.): -0.23619; Per drug corr.: 0.07499
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 32
+L.r.  0.094162
+Train Loss: 0.0620; Train Corr (pear.): -0.01450; Train Corr (sp.): -0.03007; Per drug corr.: 0.03750
+Allocated after train: 1.249 GB
+Val Loss: 0.0506; Val Corr (pear.): -0.32864; Val Corr (sp.): -0.23810; Per drug corr.: 0.07818
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 33
+L.r.  0.093985
+Train Loss: 0.0572; Train Corr (pear.): -0.01346; Train Corr (sp.): -0.02036; Per drug corr.: 0.04014
+Allocated after train: 1.249 GB
+Val Loss: 0.0570; Val Corr (pear.): -0.33009; Val Corr (sp.): -0.23836; Per drug corr.: 0.09020
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 34
+L.r.  0.093809
+Train Loss: 0.0578; Train Corr (pear.): -0.01253; Train Corr (sp.): -0.01079; Per drug corr.: 0.04334
+Allocated after train: 1.249 GB
+Val Loss: 0.0655; Val Corr (pear.): 0.33005; Val Corr (sp.): 0.23799; Per drug corr.: -0.09454
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 35
+L.r.  0.093633
+Train Loss: 0.0605; Train Corr (pear.): 0.00902; Train Corr (sp.): 0.00219; Per drug corr.: -0.04676
+Allocated after train: 1.249 GB
+Val Loss: 0.0687; Val Corr (pear.): 0.32963; Val Corr (sp.): 0.23803; Per drug corr.: -0.10004
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 36
+L.r.  0.093458
+Train Loss: 0.0639; Train Corr (pear.): 0.00185; Train Corr (sp.): -0.00296; Per drug corr.: -0.04863
+Allocated after train: 1.249 GB
+Val Loss: 0.0641; Val Corr (pear.): 0.33080; Val Corr (sp.): 0.23885; Per drug corr.: -0.10301
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 37
+L.r.  0.093284
+Train Loss: 0.0651; Train Corr (pear.): 0.00220; Train Corr (sp.): -0.00270; Per drug corr.: -0.04898
+Allocated after train: 1.249 GB
+Val Loss: 0.0553; Val Corr (pear.): 0.33532; Val Corr (sp.): 0.24219; Per drug corr.: -0.09878
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 38
+L.r.  0.09311
+Train Loss: 0.0637; Train Corr (pear.): 0.00852; Train Corr (sp.): 0.00554; Per drug corr.: -0.04820
+Allocated after train: 1.249 GB
+Val Loss: 0.0477; Val Corr (pear.): 0.34305; Val Corr (sp.): 0.24754; Per drug corr.: -0.09595
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 39
+L.r.  0.092937
+Train Loss: 0.0632; Train Corr (pear.): 0.00993; Train Corr (sp.): 0.00875; Per drug corr.: -0.04710
+Allocated after train: 1.249 GB
+Val Loss: 0.0436; Val Corr (pear.): 0.35280; Val Corr (sp.): 0.25407; Per drug corr.: -0.08581
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 40
+L.r.  0.092764
+Train Loss: 0.0600; Train Corr (pear.): 0.01078; Train Corr (sp.): 0.00988; Per drug corr.: -0.04372
+Allocated after train: 1.249 GB
+Val Loss: 0.0429; Val Corr (pear.): 0.36355; Val Corr (sp.): 0.26154; Per drug corr.: -0.07666
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 41
+L.r.  0.092593
+Train Loss: 0.0541; Train Corr (pear.): 0.01163; Train Corr (sp.): 0.01276; Per drug corr.: -0.04405
+Allocated after train: 1.249 GB
+Val Loss: 0.0446; Val Corr (pear.): 0.37422; Val Corr (sp.): 0.26923; Per drug corr.: -0.06389
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 42
+L.r.  0.092421
+Train Loss: 0.0483; Train Corr (pear.): 0.01107; Train Corr (sp.): 0.01634; Per drug corr.: -0.04032
+Allocated after train: 1.249 GB
+Val Loss: 0.0473; Val Corr (pear.): 0.38359; Val Corr (sp.): 0.27643; Per drug corr.: -0.06160
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 43
+L.r.  0.092251
+Train Loss: 0.0453; Train Corr (pear.): 0.00967; Train Corr (sp.): 0.02010; Per drug corr.: -0.04077
+Allocated after train: 1.249 GB
+Val Loss: 0.0499; Val Corr (pear.): -0.39062; Val Corr (sp.): -0.28202; Per drug corr.: 0.05750
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 44
+L.r.  0.092081
+Train Loss: 0.0463; Train Corr (pear.): -0.00711; Train Corr (sp.): -0.02287; Per drug corr.: 0.03980
+Allocated after train: 1.249 GB
+Val Loss: 0.0517; Val Corr (pear.): -0.39452; Val Corr (sp.): -0.28571; Per drug corr.: 0.05445
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 45
+L.r.  0.091912
+Train Loss: 0.0499; Train Corr (pear.): -0.00337; Train Corr (sp.): -0.02433; Per drug corr.: 0.03916
+Allocated after train: 1.249 GB
+Val Loss: 0.0524; Val Corr (pear.): -0.39491; Val Corr (sp.): -0.28701; Per drug corr.: 0.05256
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 46
+L.r.  0.091743
+Train Loss: 0.0530; Train Corr (pear.): 0.00115; Train Corr (sp.): -0.02464; Per drug corr.: 0.03638
+Allocated after train: 1.249 GB
+Val Loss: 0.0523; Val Corr (pear.): -0.39158; Val Corr (sp.): -0.28558; Per drug corr.: 0.05112
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 47
+L.r.  0.091575
+Train Loss: 0.0536; Train Corr (pear.): 0.00580; Train Corr (sp.): -0.02427; Per drug corr.: 0.03558
+Allocated after train: 1.249 GB
+Val Loss: 0.0515; Val Corr (pear.): -0.38430; Val Corr (sp.): -0.28090; Per drug corr.: 0.05201
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 48
+L.r.  0.091408
+Train Loss: 0.0514; Train Corr (pear.): 0.00993; Train Corr (sp.): -0.02329; Per drug corr.: 0.03594
+Allocated after train: 1.249 GB
+Val Loss: 0.0502; Val Corr (pear.): -0.37270; Val Corr (sp.): -0.27291; Per drug corr.: 0.05489
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 49
+L.r.  0.091241
+Train Loss: 0.0476; Train Corr (pear.): 0.01348; Train Corr (sp.): -0.02187; Per drug corr.: 0.03344
+Allocated after train: 1.249 GB
+Val Loss: 0.0486; Val Corr (pear.): -0.35630; Val Corr (sp.): -0.26128; Per drug corr.: 0.05043
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 50
+L.r.  0.091075
+Train Loss: 0.0446; Train Corr (pear.): 0.01656; Train Corr (sp.): -0.02032; Per drug corr.: 0.03450
+Allocated after train: 1.249 GB
+Val Loss: 0.0469; Val Corr (pear.): 0.33488; Val Corr (sp.): 0.24578; Per drug corr.: -0.04941
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 51
+L.r.  0.090909
+Train Loss: 0.0437; Train Corr (pear.): -0.01915; Train Corr (sp.): 0.01895; Per drug corr.: -0.03441
+Allocated after train: 1.249 GB
+Val Loss: 0.0455; Val Corr (pear.): 0.30887; Val Corr (sp.): 0.22693; Per drug corr.: -0.04955
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 52
+L.r.  0.090744
+Train Loss: 0.0449; Train Corr (pear.): -0.02098; Train Corr (sp.): 0.01789; Per drug corr.: -0.03378
+Allocated after train: 1.249 GB
+Val Loss: 0.0447; Val Corr (pear.): 0.27952; Val Corr (sp.): 0.20552; Per drug corr.: -0.05088
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 53
+L.r.  0.09058
+Train Loss: 0.0469; Train Corr (pear.): -0.02165; Train Corr (sp.): 0.01731; Per drug corr.: -0.03322
+Allocated after train: 1.249 GB
+Val Loss: 0.0445; Val Corr (pear.): 0.24873; Val Corr (sp.): 0.18287; Per drug corr.: -0.05016
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 54
+L.r.  0.090416
+Train Loss: 0.0480; Train Corr (pear.): -0.02086; Train Corr (sp.): 0.01717; Per drug corr.: -0.03193
+Allocated after train: 1.249 GB
+Val Loss: 0.0447; Val Corr (pear.): 0.21852; Val Corr (sp.): 0.16061; Per drug corr.: -0.04726
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 55
+L.r.  0.090253
+Train Loss: 0.0476; Train Corr (pear.): -0.01864; Train Corr (sp.): 0.01753; Per drug corr.: -0.03096
+Allocated after train: 1.249 GB
+Val Loss: 0.0452; Val Corr (pear.): 0.19036; Val Corr (sp.): 0.13977; Per drug corr.: -0.04618
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 56
+L.r.  0.09009
+Train Loss: 0.0461; Train Corr (pear.): -0.01575; Train Corr (sp.): 0.01850; Per drug corr.: -0.02952
+Allocated after train: 1.249 GB
+Val Loss: 0.0456; Val Corr (pear.): 0.16493; Val Corr (sp.): 0.12109; Per drug corr.: -0.04509
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 57
+L.r.  0.089928
+Train Loss: 0.0445; Train Corr (pear.): -0.01326; Train Corr (sp.): 0.02063; Per drug corr.: -0.02839
+Allocated after train: 1.249 GB
+Val Loss: 0.0462; Val Corr (pear.): 0.14230; Val Corr (sp.): 0.10475; Per drug corr.: -0.04571
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 58
+L.r.  0.089767
+Train Loss: 0.0435; Train Corr (pear.): -0.01148; Train Corr (sp.): 0.02210; Per drug corr.: -0.02651
+Allocated after train: 1.249 GB
+Val Loss: 0.0469; Val Corr (pear.): -0.12229; Val Corr (sp.): -0.09081; Per drug corr.: 0.04431
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 59
+L.r.  0.089606
+Train Loss: 0.0435; Train Corr (pear.): 0.01039; Train Corr (sp.): -0.02264; Per drug corr.: 0.02540
+Allocated after train: 1.249 GB
+Val Loss: 0.0477; Val Corr (pear.): -0.10464; Val Corr (sp.): -0.07881; Per drug corr.: 0.04376
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 60
+L.r.  0.089445
+Train Loss: 0.0443; Train Corr (pear.): 0.00984; Train Corr (sp.): -0.02350; Per drug corr.: 0.02427
+Allocated after train: 1.249 GB
+Val Loss: 0.0485; Val Corr (pear.): -0.08912; Val Corr (sp.): -0.06859; Per drug corr.: 0.04501
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 61
+L.r.  0.089286
+Train Loss: 0.0451; Train Corr (pear.): 0.00965; Train Corr (sp.): -0.02475; Per drug corr.: 0.02388
+Allocated after train: 1.249 GB
+Val Loss: 0.0488; Val Corr (pear.): -0.07558; Val Corr (sp.): -0.05971; Per drug corr.: 0.04241
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 62
+L.r.  0.089127
+Train Loss: 0.0454; Train Corr (pear.): 0.00966; Train Corr (sp.): -0.02593; Per drug corr.: 0.02267
+Allocated after train: 1.249 GB
+Val Loss: 0.0485; Val Corr (pear.): -0.06386; Val Corr (sp.): -0.05201; Per drug corr.: 0.03896
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 63
+L.r.  0.088968
+Train Loss: 0.0451; Train Corr (pear.): 0.00981; Train Corr (sp.): -0.02671; Per drug corr.: 0.02166
+Allocated after train: 1.249 GB
+Val Loss: 0.0477; Val Corr (pear.): -0.05381; Val Corr (sp.): -0.04531; Per drug corr.: 0.03726
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 64
+L.r.  0.08881
+Train Loss: 0.0443; Train Corr (pear.): 0.01005; Train Corr (sp.): -0.02710; Per drug corr.: 0.02072
+Allocated after train: 1.249 GB
+Val Loss: 0.0469; Val Corr (pear.): -0.04527; Val Corr (sp.): -0.03963; Per drug corr.: 0.03681
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 65
+L.r.  0.088652
+Train Loss: 0.0436; Train Corr (pear.): 0.01036; Train Corr (sp.): -0.02725; Per drug corr.: 0.02025
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): -0.03803; Val Corr (sp.): -0.03473; Per drug corr.: 0.03578
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 66
+L.r.  0.088496
+Train Loss: 0.0434; Train Corr (pear.): 0.01070; Train Corr (sp.): -0.02727; Per drug corr.: 0.02017
+Allocated after train: 1.249 GB
+Val Loss: 0.0463; Val Corr (pear.): 0.03192; Val Corr (sp.): 0.03081; Per drug corr.: -0.03580
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 67
+L.r.  0.088339
+Train Loss: 0.0435; Train Corr (pear.): -0.01101; Train Corr (sp.): 0.02731; Per drug corr.: -0.02000
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.02677; Val Corr (sp.): 0.02762; Per drug corr.: -0.03478
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 68
+L.r.  0.088183
+Train Loss: 0.0439; Train Corr (pear.): -0.01122; Train Corr (sp.): 0.02741; Per drug corr.: -0.01985
+Allocated after train: 1.249 GB
+Val Loss: 0.0467; Val Corr (pear.): 0.02243; Val Corr (sp.): 0.02522; Per drug corr.: -0.03455
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 69
+L.r.  0.088028
+Train Loss: 0.0442; Train Corr (pear.): -0.01126; Train Corr (sp.): 0.02756; Per drug corr.: -0.01973
+Allocated after train: 1.249 GB
+Val Loss: 0.0468; Val Corr (pear.): 0.01878; Val Corr (sp.): 0.02336; Per drug corr.: -0.03378
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 70
+L.r.  0.087873
+Train Loss: 0.0442; Train Corr (pear.): -0.01112; Train Corr (sp.): 0.02779; Per drug corr.: -0.01962
+Allocated after train: 1.249 GB
+Val Loss: 0.0467; Val Corr (pear.): 0.01572; Val Corr (sp.): 0.02206; Per drug corr.: -0.03285
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 71
+L.r.  0.087719
+Train Loss: 0.0440; Train Corr (pear.): -0.01082; Train Corr (sp.): 0.02807; Per drug corr.: -0.01966
+Allocated after train: 1.249 GB
+Val Loss: 0.0466; Val Corr (pear.): 0.01317; Val Corr (sp.): 0.02115; Per drug corr.: -0.03132
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 72
+L.r.  0.087566
+Train Loss: 0.0437; Train Corr (pear.): -0.01041; Train Corr (sp.): 0.02840; Per drug corr.: -0.01920
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.01103; Val Corr (sp.): 0.02055; Per drug corr.: -0.02993
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 73
+L.r.  0.087413
+Train Loss: 0.0435; Train Corr (pear.): -0.00997; Train Corr (sp.): 0.02875; Per drug corr.: -0.01865
+Allocated after train: 1.249 GB
+Val Loss: 0.0466; Val Corr (pear.): -0.00925; Val Corr (sp.): -0.02023; Per drug corr.: 0.03003
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 74
+L.r.  0.08726
+Train Loss: 0.0434; Train Corr (pear.): 0.00956; Train Corr (sp.): -0.02910; Per drug corr.: 0.01840
+Allocated after train: 1.249 GB
+Val Loss: 0.0467; Val Corr (pear.): -0.00774; Val Corr (sp.): -0.02008; Per drug corr.: 0.03025
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 75
+L.r.  0.087108
+Train Loss: 0.0435; Train Corr (pear.): 0.00922; Train Corr (sp.): -0.02940; Per drug corr.: 0.01869
+Allocated after train: 1.249 GB
+Val Loss: 0.0468; Val Corr (pear.): -0.00646; Val Corr (sp.): -0.02000; Per drug corr.: 0.03066
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 76
+L.r.  0.086957
+Train Loss: 0.0436; Train Corr (pear.): 0.00899; Train Corr (sp.): -0.02961; Per drug corr.: 0.01871
+Allocated after train: 1.249 GB
+Val Loss: 0.0469; Val Corr (pear.): -0.00536; Val Corr (sp.): -0.01993; Per drug corr.: 0.03166
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 77
+L.r.  0.086806
+Train Loss: 0.0437; Train Corr (pear.): 0.00885; Train Corr (sp.): -0.02973; Per drug corr.: 0.01875
+Allocated after train: 1.249 GB
+Val Loss: 0.0468; Val Corr (pear.): -0.00439; Val Corr (sp.): -0.01987; Per drug corr.: 0.03231
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 78
+L.r.  0.086655
+Train Loss: 0.0437; Train Corr (pear.): 0.00879; Train Corr (sp.): -0.02974; Per drug corr.: 0.01878
+Allocated after train: 1.249 GB
+Val Loss: 0.0466; Val Corr (pear.): -0.00354; Val Corr (sp.): -0.01984; Per drug corr.: 0.03372
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 79
+L.r.  0.086505
+Train Loss: 0.0436; Train Corr (pear.): 0.00881; Train Corr (sp.): -0.02965; Per drug corr.: 0.01872
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): -0.00278; Val Corr (sp.): -0.01980; Per drug corr.: 0.03412
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 80
+L.r.  0.086356
+Train Loss: 0.0435; Train Corr (pear.): 0.00888; Train Corr (sp.): -0.02950; Per drug corr.: 0.01932
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): -0.00211; Val Corr (sp.): -0.01978; Per drug corr.: 0.03503
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 81
+L.r.  0.086207
+Train Loss: 0.0434; Train Corr (pear.): 0.00897; Train Corr (sp.): -0.02930; Per drug corr.: 0.01991
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00152; Val Corr (sp.): 0.01976; Per drug corr.: -0.03586
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 82
+L.r.  0.086059
+Train Loss: 0.0434; Train Corr (pear.): -0.00907; Train Corr (sp.): 0.02915; Per drug corr.: -0.01891
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00103; Val Corr (sp.): 0.01994; Per drug corr.: -0.03539
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 83
+L.r.  0.085911
+Train Loss: 0.0434; Train Corr (pear.): -0.00917; Train Corr (sp.): 0.02892; Per drug corr.: -0.02012
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00061; Val Corr (sp.): 0.02014; Per drug corr.: -0.03486
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 84
+L.r.  0.085763
+Train Loss: 0.0435; Train Corr (pear.): -0.00923; Train Corr (sp.): 0.02878; Per drug corr.: -0.02011
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00028; Val Corr (sp.): 0.02037; Per drug corr.: -0.03561
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 85
+L.r.  0.085616
+Train Loss: 0.0435; Train Corr (pear.): -0.00927; Train Corr (sp.): 0.02869; Per drug corr.: -0.02014
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00001; Val Corr (sp.): 0.02068; Per drug corr.: -0.03526
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 86
+L.r.  0.08547
+Train Loss: 0.0434; Train Corr (pear.): -0.00927; Train Corr (sp.): 0.02863; Per drug corr.: -0.02031
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): -0.00021; Val Corr (sp.): 0.02105; Per drug corr.: -0.03566
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 87
+L.r.  0.085324
+Train Loss: 0.0434; Train Corr (pear.): -0.00926; Train Corr (sp.): 0.02862; Per drug corr.: -0.02030
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): -0.00038; Val Corr (sp.): 0.02145; Per drug corr.: -0.03641
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 88
+L.r.  0.085179
+Train Loss: 0.0434; Train Corr (pear.): -0.00923; Train Corr (sp.): 0.02866; Per drug corr.: -0.02025
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00052; Val Corr (sp.): -0.02187; Per drug corr.: 0.03773
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 89
+L.r.  0.085034
+Train Loss: 0.0434; Train Corr (pear.): 0.00919; Train Corr (sp.): -0.02852; Per drug corr.: 0.01935
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00065; Val Corr (sp.): -0.02225; Per drug corr.: 0.03770
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 90
+L.r.  0.08489
+Train Loss: 0.0434; Train Corr (pear.): 0.00916; Train Corr (sp.): -0.02873; Per drug corr.: 0.02010
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00076; Val Corr (sp.): -0.02262; Per drug corr.: 0.03765
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 91
+L.r.  0.084746
+Train Loss: 0.0434; Train Corr (pear.): 0.00914; Train Corr (sp.): -0.02873; Per drug corr.: 0.02025
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00087; Val Corr (sp.): -0.02295; Per drug corr.: 0.03653
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 92
+L.r.  0.084602
+Train Loss: 0.0434; Train Corr (pear.): 0.00914; Train Corr (sp.): -0.02872; Per drug corr.: 0.02030
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00098; Val Corr (sp.): -0.02321; Per drug corr.: 0.03811
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 93
+L.r.  0.084459
+Train Loss: 0.0434; Train Corr (pear.): 0.00916; Train Corr (sp.): -0.02866; Per drug corr.: 0.02038
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00109; Val Corr (sp.): -0.02341; Per drug corr.: 0.03731
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 94
+L.r.  0.084317
+Train Loss: 0.0434; Train Corr (pear.): 0.00919; Train Corr (sp.): -0.02859; Per drug corr.: 0.02032
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00121; Val Corr (sp.): -0.02361; Per drug corr.: 0.03798
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 95
+L.r.  0.084175
+Train Loss: 0.0434; Train Corr (pear.): 0.00924; Train Corr (sp.): -0.02850; Per drug corr.: 0.02039
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00132; Val Corr (sp.): -0.02371; Per drug corr.: 0.03854
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 96
+L.r.  0.084034
+Train Loss: 0.0434; Train Corr (pear.): 0.00930; Train Corr (sp.): -0.02838; Per drug corr.: 0.02044
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00144; Val Corr (sp.): -0.02381; Per drug corr.: 0.03855
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 97
+L.r.  0.083893
+Train Loss: 0.0434; Train Corr (pear.): 0.00936; Train Corr (sp.): -0.02824; Per drug corr.: 0.02035
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00155; Val Corr (sp.): -0.02389; Per drug corr.: 0.03882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 98
+L.r.  0.083752
+Train Loss: 0.0434; Train Corr (pear.): 0.00943; Train Corr (sp.): -0.02812; Per drug corr.: 0.02024
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00166; Val Corr (sp.): -0.02394; Per drug corr.: 0.03816
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 99
+L.r.  0.083612
+Train Loss: 0.0434; Train Corr (pear.): 0.00949; Train Corr (sp.): -0.02798; Per drug corr.: 0.02026
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00175; Val Corr (sp.): -0.02356; Per drug corr.: 0.03756
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 100
+L.r.  0.083472
+Train Loss: 0.0434; Train Corr (pear.): 0.00955; Train Corr (sp.): -0.02764; Per drug corr.: 0.02011
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): -0.00184; Val Corr (sp.): 0.02182; Per drug corr.: -0.03734
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 101
+L.r.  0.083333
+Train Loss: 0.0434; Train Corr (pear.): -0.00961; Train Corr (sp.): 0.02575; Per drug corr.: -0.02049
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): -0.00191; Val Corr (sp.): 0.02364; Per drug corr.: -0.03757
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+Epoch 102
+L.r.  0.083195
+Train Loss: 0.0434; Train Corr (pear.): -0.00965; Train Corr (sp.): 0.02687; Per drug corr.: -0.02010
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00198; Val Corr (sp.): -0.02269; Per drug corr.: 0.03915
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  102
+spearman:  102
+per drug:  102
+loss:  102
+Epoch 103
+L.r.  0.083056
+Train Loss: 0.0434; Train Corr (pear.): 0.00970; Train Corr (sp.): -0.02607; Per drug corr.: 0.01927
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00204; Val Corr (sp.): -0.02431; Per drug corr.: 0.03775
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  103
+Epoch 104
+L.r.  0.082919
+Train Loss: 0.0434; Train Corr (pear.): 0.00973; Train Corr (sp.): -0.02736; Per drug corr.: 0.02015
+Allocated after train: 1.249 GB
+Val Loss: 0.0465; Val Corr (pear.): 0.00209; Val Corr (sp.): -0.02431; Per drug corr.: 0.03905
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  104
+loss:  104
+Epoch 105
+L.r.  0.082781
+Train Loss: 0.0434; Train Corr (pear.): 0.00977; Train Corr (sp.): -0.02738; Per drug corr.: 0.01985
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00214; Val Corr (sp.): -0.02420; Per drug corr.: 0.03889
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  105
+loss:  105
+Epoch 106
+L.r.  0.082645
+Train Loss: 0.0434; Train Corr (pear.): 0.00980; Train Corr (sp.): -0.02731; Per drug corr.: 0.02010
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00219; Val Corr (sp.): -0.02422; Per drug corr.: 0.03871
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  106
+loss:  106
+Epoch 107
+L.r.  0.082508
+Train Loss: 0.0434; Train Corr (pear.): 0.00983; Train Corr (sp.): -0.02728; Per drug corr.: 0.02010
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00224; Val Corr (sp.): -0.02425; Per drug corr.: 0.03888
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  107
+loss:  107
+Epoch 108
+L.r.  0.082372
+Train Loss: 0.0434; Train Corr (pear.): 0.00986; Train Corr (sp.): -0.02722; Per drug corr.: 0.02013
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00228; Val Corr (sp.): -0.02422; Per drug corr.: 0.03868
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  108
+loss:  108
+Epoch 109
+L.r.  0.082237
+Train Loss: 0.0434; Train Corr (pear.): 0.00990; Train Corr (sp.): -0.02712; Per drug corr.: 0.02031
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00233; Val Corr (sp.): -0.02423; Per drug corr.: 0.03875
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  109
+loss:  109
+Epoch 110
+L.r.  0.082102
+Train Loss: 0.0434; Train Corr (pear.): 0.00994; Train Corr (sp.): -0.02708; Per drug corr.: 0.02025
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00238; Val Corr (sp.): -0.02418; Per drug corr.: 0.03882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  110
+loss:  110
+Epoch 111
+L.r.  0.081967
+Train Loss: 0.0434; Train Corr (pear.): 0.00998; Train Corr (sp.): -0.02698; Per drug corr.: 0.02022
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00243; Val Corr (sp.): -0.02417; Per drug corr.: 0.03902
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  111
+Epoch 112
+L.r.  0.081833
+Train Loss: 0.0434; Train Corr (pear.): 0.01002; Train Corr (sp.): -0.02692; Per drug corr.: 0.02032
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00248; Val Corr (sp.): -0.02413; Per drug corr.: 0.03914
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  112
+Epoch 113
+L.r.  0.081699
+Train Loss: 0.0434; Train Corr (pear.): 0.01006; Train Corr (sp.): -0.02682; Per drug corr.: 0.02025
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00253; Val Corr (sp.): -0.02409; Per drug corr.: 0.03871
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  113
+Epoch 114
+L.r.  0.081566
+Train Loss: 0.0434; Train Corr (pear.): 0.01011; Train Corr (sp.): -0.02670; Per drug corr.: 0.02033
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00258; Val Corr (sp.): -0.02401; Per drug corr.: 0.03897
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  114
+Epoch 115
+L.r.  0.081433
+Train Loss: 0.0434; Train Corr (pear.): 0.01016; Train Corr (sp.): -0.02661; Per drug corr.: 0.02045
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00263; Val Corr (sp.): -0.02393; Per drug corr.: 0.03876
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  115
+Epoch 116
+L.r.  0.081301
+Train Loss: 0.0434; Train Corr (pear.): 0.01021; Train Corr (sp.): -0.02651; Per drug corr.: 0.02060
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00268; Val Corr (sp.): -0.02380; Per drug corr.: 0.03914
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  116
+Epoch 117
+L.r.  0.081169
+Train Loss: 0.0434; Train Corr (pear.): 0.01026; Train Corr (sp.): -0.02640; Per drug corr.: 0.02066
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00273; Val Corr (sp.): -0.02374; Per drug corr.: 0.03923
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  117
+per drug:  117
+Epoch 118
+L.r.  0.081037
+Train Loss: 0.0434; Train Corr (pear.): 0.01031; Train Corr (sp.): -0.02629; Per drug corr.: 0.02048
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00277; Val Corr (sp.): -0.02368; Per drug corr.: 0.03900
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  118
+Epoch 119
+L.r.  0.080906
+Train Loss: 0.0434; Train Corr (pear.): 0.01036; Train Corr (sp.): -0.02617; Per drug corr.: 0.02061
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00282; Val Corr (sp.): -0.02363; Per drug corr.: 0.03896
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  119
+Epoch 120
+L.r.  0.080775
+Train Loss: 0.0434; Train Corr (pear.): 0.01040; Train Corr (sp.): -0.02609; Per drug corr.: 0.02024
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00286; Val Corr (sp.): -0.02355; Per drug corr.: 0.03904
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  120
+Epoch 121
+L.r.  0.080645
+Train Loss: 0.0434; Train Corr (pear.): 0.01045; Train Corr (sp.): -0.02602; Per drug corr.: 0.02023
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00290; Val Corr (sp.): -0.02343; Per drug corr.: 0.03901
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  121
+Epoch 122
+L.r.  0.080515
+Train Loss: 0.0434; Train Corr (pear.): 0.01049; Train Corr (sp.): -0.02586; Per drug corr.: 0.02054
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00294; Val Corr (sp.): -0.02339; Per drug corr.: 0.03935
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  122
+per drug:  122
+Epoch 123
+L.r.  0.080386
+Train Loss: 0.0434; Train Corr (pear.): 0.01053; Train Corr (sp.): -0.02587; Per drug corr.: 0.02055
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00298; Val Corr (sp.): -0.02333; Per drug corr.: 0.03905
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  123
+Epoch 124
+L.r.  0.080257
+Train Loss: 0.0434; Train Corr (pear.): 0.01057; Train Corr (sp.): -0.02573; Per drug corr.: 0.02059
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00301; Val Corr (sp.): -0.02319; Per drug corr.: 0.03919
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  124
+Epoch 125
+L.r.  0.080128
+Train Loss: 0.0434; Train Corr (pear.): 0.01061; Train Corr (sp.): -0.02568; Per drug corr.: 0.02076
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00304; Val Corr (sp.): -0.02325; Per drug corr.: 0.03903
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  125
+Epoch 126
+L.r.  0.08
+Train Loss: 0.0434; Train Corr (pear.): 0.01064; Train Corr (sp.): -0.02560; Per drug corr.: 0.02088
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00308; Val Corr (sp.): -0.02309; Per drug corr.: 0.03918
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  126
+Epoch 127
+L.r.  0.079872
+Train Loss: 0.0434; Train Corr (pear.): 0.01068; Train Corr (sp.): -0.02550; Per drug corr.: 0.02109
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00311; Val Corr (sp.): -0.02309; Per drug corr.: 0.03803
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  127
+Epoch 128
+L.r.  0.079745
+Train Loss: 0.0434; Train Corr (pear.): 0.01072; Train Corr (sp.): -0.02542; Per drug corr.: 0.02103
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00315; Val Corr (sp.): -0.02297; Per drug corr.: 0.03828
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  128
+Epoch 129
+L.r.  0.079618
+Train Loss: 0.0434; Train Corr (pear.): 0.01076; Train Corr (sp.): -0.02535; Per drug corr.: 0.02102
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00318; Val Corr (sp.): -0.02289; Per drug corr.: 0.03782
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  129
+Epoch 130
+L.r.  0.079491
+Train Loss: 0.0434; Train Corr (pear.): 0.01080; Train Corr (sp.): -0.02527; Per drug corr.: 0.02098
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00322; Val Corr (sp.): -0.02278; Per drug corr.: 0.03820
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  130
+Epoch 131
+L.r.  0.079365
+Train Loss: 0.0434; Train Corr (pear.): 0.01084; Train Corr (sp.): -0.02517; Per drug corr.: 0.02093
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00326; Val Corr (sp.): -0.02270; Per drug corr.: 0.03892
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  131
+Epoch 132
+L.r.  0.079239
+Train Loss: 0.0433; Train Corr (pear.): 0.01089; Train Corr (sp.): -0.02509; Per drug corr.: 0.02082
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00329; Val Corr (sp.): -0.02261; Per drug corr.: 0.03856
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  132
+spearman:  132
+Epoch 133
+L.r.  0.079114
+Train Loss: 0.0433; Train Corr (pear.): 0.01093; Train Corr (sp.): -0.02498; Per drug corr.: 0.02067
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00333; Val Corr (sp.): -0.02250; Per drug corr.: 0.03856
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  133
+spearman:  133
+Epoch 134
+L.r.  0.078989
+Train Loss: 0.0433; Train Corr (pear.): 0.01098; Train Corr (sp.): -0.02489; Per drug corr.: 0.02082
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00337; Val Corr (sp.): -0.02243; Per drug corr.: 0.03863
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  134
+spearman:  134
+Epoch 135
+L.r.  0.078864
+Train Loss: 0.0433; Train Corr (pear.): 0.01102; Train Corr (sp.): -0.02477; Per drug corr.: 0.02082
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00341; Val Corr (sp.): -0.02232; Per drug corr.: 0.03918
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  135
+spearman:  135
+Epoch 136
+L.r.  0.07874
+Train Loss: 0.0433; Train Corr (pear.): 0.01107; Train Corr (sp.): -0.02468; Per drug corr.: 0.02055
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00344; Val Corr (sp.): -0.02222; Per drug corr.: 0.03905
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  136
+spearman:  136
+Epoch 137
+L.r.  0.078616
+Train Loss: 0.0433; Train Corr (pear.): 0.01111; Train Corr (sp.): -0.02461; Per drug corr.: 0.02066
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00348; Val Corr (sp.): -0.02215; Per drug corr.: 0.03882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  137
+spearman:  137
+Epoch 138
+L.r.  0.078493
+Train Loss: 0.0433; Train Corr (pear.): 0.01115; Train Corr (sp.): -0.02452; Per drug corr.: 0.02082
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00351; Val Corr (sp.): -0.02203; Per drug corr.: 0.03893
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  138
+spearman:  138
+Epoch 139
+L.r.  0.07837
+Train Loss: 0.0433; Train Corr (pear.): 0.01120; Train Corr (sp.): -0.02438; Per drug corr.: 0.02077
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00354; Val Corr (sp.): -0.02197; Per drug corr.: 0.03884
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  139
+spearman:  139
+Epoch 140
+L.r.  0.078247
+Train Loss: 0.0433; Train Corr (pear.): 0.01124; Train Corr (sp.): -0.02435; Per drug corr.: 0.02086
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00357; Val Corr (sp.): -0.02188; Per drug corr.: 0.03868
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  140
+spearman:  140
+Epoch 141
+L.r.  0.078125
+Train Loss: 0.0433; Train Corr (pear.): 0.01127; Train Corr (sp.): -0.02424; Per drug corr.: 0.02088
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00360; Val Corr (sp.): -0.02183; Per drug corr.: 0.03896
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  141
+spearman:  141
+Epoch 142
+L.r.  0.078003
+Train Loss: 0.0433; Train Corr (pear.): 0.01131; Train Corr (sp.): -0.02417; Per drug corr.: 0.02092
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00363; Val Corr (sp.): -0.02170; Per drug corr.: 0.03896
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  142
+spearman:  142
+Epoch 143
+L.r.  0.077882
+Train Loss: 0.0433; Train Corr (pear.): 0.01135; Train Corr (sp.): -0.02407; Per drug corr.: 0.02106
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00366; Val Corr (sp.): -0.02168; Per drug corr.: 0.03889
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  143
+spearman:  143
+Epoch 144
+L.r.  0.07776
+Train Loss: 0.0433; Train Corr (pear.): 0.01139; Train Corr (sp.): -0.02402; Per drug corr.: 0.02089
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00369; Val Corr (sp.): -0.02156; Per drug corr.: 0.03882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  144
+spearman:  144
+Epoch 145
+L.r.  0.07764
+Train Loss: 0.0433; Train Corr (pear.): 0.01143; Train Corr (sp.): -0.02393; Per drug corr.: 0.02080
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00373; Val Corr (sp.): -0.02148; Per drug corr.: 0.03865
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  145
+spearman:  145
+Epoch 146
+L.r.  0.077519
+Train Loss: 0.0433; Train Corr (pear.): 0.01147; Train Corr (sp.): -0.02385; Per drug corr.: 0.02090
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00376; Val Corr (sp.): -0.02141; Per drug corr.: 0.03880
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  146
+spearman:  146
+Epoch 147
+L.r.  0.077399
+Train Loss: 0.0433; Train Corr (pear.): 0.01151; Train Corr (sp.): -0.02375; Per drug corr.: 0.02083
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00379; Val Corr (sp.): -0.02130; Per drug corr.: 0.03882
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  147
+spearman:  147
+Epoch 148
+L.r.  0.07728
+Train Loss: 0.0433; Train Corr (pear.): 0.01155; Train Corr (sp.): -0.02369; Per drug corr.: 0.02079
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00382; Val Corr (sp.): -0.02122; Per drug corr.: 0.03920
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  148
+spearman:  148
+Epoch 149
+L.r.  0.07716
+Train Loss: 0.0433; Train Corr (pear.): 0.01160; Train Corr (sp.): -0.02359; Per drug corr.: 0.02089
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00386; Val Corr (sp.): -0.02114; Per drug corr.: 0.03916
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  149
+spearman:  149
+Epoch 150
+L.r.  0.077042
+Train Loss: 0.0433; Train Corr (pear.): 0.01164; Train Corr (sp.): -0.02347; Per drug corr.: 0.02108
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00389; Val Corr (sp.): -0.02107; Per drug corr.: 0.03904
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  150
+spearman:  150
+Epoch 151
+L.r.  0.076923
+Train Loss: 0.0433; Train Corr (pear.): 0.01169; Train Corr (sp.): -0.02337; Per drug corr.: 0.02114
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00392; Val Corr (sp.): -0.02098; Per drug corr.: 0.03887
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  151
+spearman:  151
+Epoch 152
+L.r.  0.076805
+Train Loss: 0.0433; Train Corr (pear.): 0.01173; Train Corr (sp.): -0.02329; Per drug corr.: 0.02120
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00395; Val Corr (sp.): -0.02087; Per drug corr.: 0.03850
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  152
+spearman:  152
+Epoch 153
+L.r.  0.076687
+Train Loss: 0.0433; Train Corr (pear.): 0.01177; Train Corr (sp.): -0.02320; Per drug corr.: 0.02095
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00399; Val Corr (sp.): -0.02079; Per drug corr.: 0.03855
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  153
+spearman:  153
+Epoch 154
+L.r.  0.07657
+Train Loss: 0.0433; Train Corr (pear.): 0.01182; Train Corr (sp.): -0.02313; Per drug corr.: 0.02108
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00402; Val Corr (sp.): -0.02065; Per drug corr.: 0.03851
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  154
+spearman:  154
+Epoch 155
+L.r.  0.076453
+Train Loss: 0.0433; Train Corr (pear.): 0.01186; Train Corr (sp.): -0.02302; Per drug corr.: 0.02118
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00405; Val Corr (sp.): -0.02057; Per drug corr.: 0.03856
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  155
+spearman:  155
+Epoch 156
+L.r.  0.076336
+Train Loss: 0.0433; Train Corr (pear.): 0.01190; Train Corr (sp.): -0.02297; Per drug corr.: 0.02114
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00408; Val Corr (sp.): -0.02055; Per drug corr.: 0.03847
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  156
+spearman:  156
+Epoch 157
+L.r.  0.07622
+Train Loss: 0.0433; Train Corr (pear.): 0.01194; Train Corr (sp.): -0.02287; Per drug corr.: 0.02114
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00411; Val Corr (sp.): -0.02043; Per drug corr.: 0.03877
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  157
+spearman:  157
+Epoch 158
+L.r.  0.076104
+Train Loss: 0.0433; Train Corr (pear.): 0.01198; Train Corr (sp.): -0.02281; Per drug corr.: 0.02108
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00414; Val Corr (sp.): -0.02037; Per drug corr.: 0.03821
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  158
+spearman:  158
+Epoch 159
+L.r.  0.075988
+Train Loss: 0.0433; Train Corr (pear.): 0.01202; Train Corr (sp.): -0.02271; Per drug corr.: 0.02109
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00417; Val Corr (sp.): -0.02026; Per drug corr.: 0.03857
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  159
+spearman:  159
+Epoch 160
+L.r.  0.075873
+Train Loss: 0.0433; Train Corr (pear.): 0.01207; Train Corr (sp.): -0.02264; Per drug corr.: 0.02100
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00420; Val Corr (sp.): -0.02020; Per drug corr.: 0.03861
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  160
+spearman:  160
+Epoch 161
+L.r.  0.075758
+Train Loss: 0.0433; Train Corr (pear.): 0.01211; Train Corr (sp.): -0.02253; Per drug corr.: 0.02108
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00423; Val Corr (sp.): -0.02012; Per drug corr.: 0.03868
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  161
+spearman:  161
+Epoch 162
+L.r.  0.075643
+Train Loss: 0.0433; Train Corr (pear.): 0.01215; Train Corr (sp.): -0.02247; Per drug corr.: 0.02124
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00426; Val Corr (sp.): -0.02003; Per drug corr.: 0.03845
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  162
+spearman:  162
+Epoch 163
+L.r.  0.075529
+Train Loss: 0.0433; Train Corr (pear.): 0.01219; Train Corr (sp.): -0.02238; Per drug corr.: 0.02125
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00430; Val Corr (sp.): -0.01990; Per drug corr.: 0.03878
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  163
+spearman:  163
+Epoch 164
+L.r.  0.075415
+Train Loss: 0.0433; Train Corr (pear.): 0.01224; Train Corr (sp.): -0.02228; Per drug corr.: 0.02129
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00433; Val Corr (sp.): -0.01990; Per drug corr.: 0.03876
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  164
+spearman:  164
+Epoch 165
+L.r.  0.075301
+Train Loss: 0.0433; Train Corr (pear.): 0.01228; Train Corr (sp.): -0.02222; Per drug corr.: 0.02128
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00436; Val Corr (sp.): -0.01973; Per drug corr.: 0.03883
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  165
+spearman:  165
+Epoch 166
+L.r.  0.075188
+Train Loss: 0.0433; Train Corr (pear.): 0.01233; Train Corr (sp.): -0.02211; Per drug corr.: 0.02156
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00439; Val Corr (sp.): -0.01965; Per drug corr.: 0.03870
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  166
+spearman:  166
+Epoch 167
+L.r.  0.075075
+Train Loss: 0.0433; Train Corr (pear.): 0.01237; Train Corr (sp.): -0.02201; Per drug corr.: 0.02134
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00443; Val Corr (sp.): -0.01953; Per drug corr.: 0.03866
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  167
+spearman:  167
+Epoch 168
+L.r.  0.074963
+Train Loss: 0.0433; Train Corr (pear.): 0.01242; Train Corr (sp.): -0.02194; Per drug corr.: 0.02147
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00446; Val Corr (sp.): -0.01946; Per drug corr.: 0.03860
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  168
+spearman:  168
+Epoch 169
+L.r.  0.07485
+Train Loss: 0.0433; Train Corr (pear.): 0.01247; Train Corr (sp.): -0.02184; Per drug corr.: 0.02160
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00449; Val Corr (sp.): -0.01933; Per drug corr.: 0.03865
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  169
+spearman:  169
+Epoch 170
+L.r.  0.074738
+Train Loss: 0.0433; Train Corr (pear.): 0.01251; Train Corr (sp.): -0.02176; Per drug corr.: 0.02157
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00452; Val Corr (sp.): -0.01928; Per drug corr.: 0.03875
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  170
+spearman:  170
+Epoch 171
+L.r.  0.074627
+Train Loss: 0.0433; Train Corr (pear.): 0.01256; Train Corr (sp.): -0.02167; Per drug corr.: 0.02157
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00456; Val Corr (sp.): -0.01919; Per drug corr.: 0.03911
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  171
+spearman:  171
+Epoch 172
+L.r.  0.074516
+Train Loss: 0.0433; Train Corr (pear.): 0.01260; Train Corr (sp.): -0.02160; Per drug corr.: 0.02159
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00459; Val Corr (sp.): -0.01909; Per drug corr.: 0.03861
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  172
+spearman:  172
+Epoch 173
+L.r.  0.074405
+Train Loss: 0.0433; Train Corr (pear.): 0.01265; Train Corr (sp.): -0.02149; Per drug corr.: 0.02176
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00462; Val Corr (sp.): -0.01896; Per drug corr.: 0.03875
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  173
+spearman:  173
+Epoch 174
+L.r.  0.074294
+Train Loss: 0.0433; Train Corr (pear.): 0.01270; Train Corr (sp.): -0.02140; Per drug corr.: 0.02163
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00465; Val Corr (sp.): -0.01892; Per drug corr.: 0.03900
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  174
+spearman:  174
+Epoch 175
+L.r.  0.074184
+Train Loss: 0.0433; Train Corr (pear.): 0.01274; Train Corr (sp.): -0.02132; Per drug corr.: 0.02169
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00469; Val Corr (sp.): -0.01883; Per drug corr.: 0.03922
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  175
+spearman:  175
+Epoch 176
+L.r.  0.074074
+Train Loss: 0.0433; Train Corr (pear.): 0.01279; Train Corr (sp.): -0.02122; Per drug corr.: 0.02177
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00472; Val Corr (sp.): -0.01873; Per drug corr.: 0.03912
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  176
+spearman:  176
+Epoch 177
+L.r.  0.073964
+Train Loss: 0.0433; Train Corr (pear.): 0.01284; Train Corr (sp.): -0.02115; Per drug corr.: 0.02179
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00475; Val Corr (sp.): -0.01866; Per drug corr.: 0.03902
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  177
+spearman:  177
+Epoch 178
+L.r.  0.073855
+Train Loss: 0.0433; Train Corr (pear.): 0.01288; Train Corr (sp.): -0.02105; Per drug corr.: 0.02174
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00479; Val Corr (sp.): -0.01855; Per drug corr.: 0.03893
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  178
+spearman:  178
+Epoch 179
+L.r.  0.073746
+Train Loss: 0.0433; Train Corr (pear.): 0.01293; Train Corr (sp.): -0.02096; Per drug corr.: 0.02183
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00482; Val Corr (sp.): -0.01850; Per drug corr.: 0.03923
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  179
+spearman:  179
+Epoch 180
+L.r.  0.073638
+Train Loss: 0.0433; Train Corr (pear.): 0.01298; Train Corr (sp.): -0.02086; Per drug corr.: 0.02192
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00486; Val Corr (sp.): -0.01841; Per drug corr.: 0.03949
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  180
+spearman:  180
+per drug:  180
+Epoch 181
+L.r.  0.073529
+Train Loss: 0.0433; Train Corr (pear.): 0.01303; Train Corr (sp.): -0.02079; Per drug corr.: 0.02186
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00489; Val Corr (sp.): -0.01831; Per drug corr.: 0.03940
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  181
+spearman:  181
+Epoch 182
+L.r.  0.073421
+Train Loss: 0.0433; Train Corr (pear.): 0.01308; Train Corr (sp.): -0.02068; Per drug corr.: 0.02203
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00493; Val Corr (sp.): -0.01820; Per drug corr.: 0.03909
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  182
+spearman:  182
+Epoch 183
+L.r.  0.073314
+Train Loss: 0.0433; Train Corr (pear.): 0.01313; Train Corr (sp.): -0.02059; Per drug corr.: 0.02202
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00496; Val Corr (sp.): -0.01813; Per drug corr.: 0.03936
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  183
+spearman:  183
+Epoch 184
+L.r.  0.073206
+Train Loss: 0.0433; Train Corr (pear.): 0.01318; Train Corr (sp.): -0.02052; Per drug corr.: 0.02189
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00500; Val Corr (sp.): -0.01802; Per drug corr.: 0.03902
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  184
+spearman:  184
+Epoch 185
+L.r.  0.073099
+Train Loss: 0.0433; Train Corr (pear.): 0.01323; Train Corr (sp.): -0.02046; Per drug corr.: 0.02192
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00504; Val Corr (sp.): -0.01794; Per drug corr.: 0.03928
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  185
+spearman:  185
+Epoch 186
+L.r.  0.072993
+Train Loss: 0.0433; Train Corr (pear.): 0.01329; Train Corr (sp.): -0.02037; Per drug corr.: 0.02189
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00507; Val Corr (sp.): -0.01787; Per drug corr.: 0.03921
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  186
+spearman:  186
+Epoch 187
+L.r.  0.072886
+Train Loss: 0.0433; Train Corr (pear.): 0.01334; Train Corr (sp.): -0.02023; Per drug corr.: 0.02189
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00511; Val Corr (sp.): -0.01775; Per drug corr.: 0.03900
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  187
+spearman:  187
+Epoch 188
+L.r.  0.07278
+Train Loss: 0.0433; Train Corr (pear.): 0.01339; Train Corr (sp.): -0.02020; Per drug corr.: 0.02198
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00515; Val Corr (sp.): -0.01767; Per drug corr.: 0.03918
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  188
+spearman:  188
+Epoch 189
+L.r.  0.072674
+Train Loss: 0.0433; Train Corr (pear.): 0.01345; Train Corr (sp.): -0.02006; Per drug corr.: 0.02187
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00519; Val Corr (sp.): -0.01761; Per drug corr.: 0.03922
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  189
+spearman:  189
+Epoch 190
+L.r.  0.072569
+Train Loss: 0.0433; Train Corr (pear.): 0.01350; Train Corr (sp.): -0.01997; Per drug corr.: 0.02201
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00523; Val Corr (sp.): -0.01752; Per drug corr.: 0.03953
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  190
+spearman:  190
+per drug:  190
+Epoch 191
+L.r.  0.072464
+Train Loss: 0.0433; Train Corr (pear.): 0.01355; Train Corr (sp.): -0.01987; Per drug corr.: 0.02180
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00527; Val Corr (sp.): -0.01742; Per drug corr.: 0.03951
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  191
+spearman:  191
+Epoch 192
+L.r.  0.072359
+Train Loss: 0.0433; Train Corr (pear.): 0.01361; Train Corr (sp.): -0.01980; Per drug corr.: 0.02193
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00530; Val Corr (sp.): -0.01732; Per drug corr.: 0.03954
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  192
+spearman:  192
+per drug:  192
+Epoch 193
+L.r.  0.072254
+Train Loss: 0.0433; Train Corr (pear.): 0.01366; Train Corr (sp.): -0.01970; Per drug corr.: 0.02203
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00534; Val Corr (sp.): -0.01722; Per drug corr.: 0.03952
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  193
+spearman:  193
+Epoch 194
+L.r.  0.07215
+Train Loss: 0.0433; Train Corr (pear.): 0.01372; Train Corr (sp.): -0.01959; Per drug corr.: 0.02181
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00539; Val Corr (sp.): -0.01716; Per drug corr.: 0.03921
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  194
+spearman:  194
+Epoch 195
+L.r.  0.072046
+Train Loss: 0.0433; Train Corr (pear.): 0.01378; Train Corr (sp.): -0.01952; Per drug corr.: 0.02198
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00543; Val Corr (sp.): -0.01705; Per drug corr.: 0.03961
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  195
+spearman:  195
+per drug:  195
+Epoch 196
+L.r.  0.071942
+Train Loss: 0.0433; Train Corr (pear.): 0.01384; Train Corr (sp.): -0.01941; Per drug corr.: 0.02203
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00547; Val Corr (sp.): -0.01694; Per drug corr.: 0.03935
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  196
+spearman:  196
+Epoch 197
+L.r.  0.071839
+Train Loss: 0.0433; Train Corr (pear.): 0.01389; Train Corr (sp.): -0.01932; Per drug corr.: 0.02219
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00551; Val Corr (sp.): -0.01686; Per drug corr.: 0.03928
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  197
+spearman:  197
+Epoch 198
+L.r.  0.071736
+Train Loss: 0.0433; Train Corr (pear.): 0.01395; Train Corr (sp.): -0.01923; Per drug corr.: 0.02217
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00555; Val Corr (sp.): -0.01679; Per drug corr.: 0.03920
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  198
+spearman:  198
+Epoch 199
+L.r.  0.071633
+Train Loss: 0.0433; Train Corr (pear.): 0.01401; Train Corr (sp.): -0.01916; Per drug corr.: 0.02203
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00560; Val Corr (sp.): -0.01670; Per drug corr.: 0.03938
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  199
+spearman:  199
+Epoch 200
+L.r.  0.071531
+Train Loss: 0.0433; Train Corr (pear.): 0.01407; Train Corr (sp.): -0.01908; Per drug corr.: 0.02198
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00564; Val Corr (sp.): -0.01660; Per drug corr.: 0.03927
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  200
+spearman:  200
+Epoch 201
+L.r.  0.071429
+Train Loss: 0.0433; Train Corr (pear.): 0.01413; Train Corr (sp.): -0.01894; Per drug corr.: 0.02208
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00568; Val Corr (sp.): -0.01654; Per drug corr.: 0.03888
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  201
+spearman:  201
+Epoch 202
+L.r.  0.071327
+Train Loss: 0.0433; Train Corr (pear.): 0.01419; Train Corr (sp.): -0.01887; Per drug corr.: 0.02201
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00573; Val Corr (sp.): -0.01646; Per drug corr.: 0.03927
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  202
+spearman:  202
+Epoch 203
+L.r.  0.071225
+Train Loss: 0.0433; Train Corr (pear.): 0.01426; Train Corr (sp.): -0.01874; Per drug corr.: 0.02192
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00577; Val Corr (sp.): -0.01634; Per drug corr.: 0.03901
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  203
+spearman:  203
+Epoch 204
+L.r.  0.071124
+Train Loss: 0.0433; Train Corr (pear.): 0.01432; Train Corr (sp.): -0.01867; Per drug corr.: 0.02198
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00582; Val Corr (sp.): -0.01626; Per drug corr.: 0.03930
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  204
+spearman:  204
+Epoch 205
+L.r.  0.071023
+Train Loss: 0.0433; Train Corr (pear.): 0.01438; Train Corr (sp.): -0.01858; Per drug corr.: 0.02197
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00587; Val Corr (sp.): -0.01617; Per drug corr.: 0.03931
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  205
+spearman:  205
+Epoch 206
+L.r.  0.070922
+Train Loss: 0.0433; Train Corr (pear.): 0.01445; Train Corr (sp.): -0.01848; Per drug corr.: 0.02202
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00592; Val Corr (sp.): -0.01606; Per drug corr.: 0.03939
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  206
+spearman:  206
+Epoch 207
+L.r.  0.070822
+Train Loss: 0.0433; Train Corr (pear.): 0.01451; Train Corr (sp.): -0.01837; Per drug corr.: 0.02222
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00596; Val Corr (sp.): -0.01596; Per drug corr.: 0.03921
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  207
+spearman:  207
+Epoch 208
+L.r.  0.070721
+Train Loss: 0.0433; Train Corr (pear.): 0.01458; Train Corr (sp.): -0.01829; Per drug corr.: 0.02202
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00601; Val Corr (sp.): -0.01588; Per drug corr.: 0.03940
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  208
+spearman:  208
+Epoch 209
+L.r.  0.070621
+Train Loss: 0.0433; Train Corr (pear.): 0.01464; Train Corr (sp.): -0.01818; Per drug corr.: 0.02215
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00606; Val Corr (sp.): -0.01581; Per drug corr.: 0.03934
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  209
+spearman:  209
+Epoch 210
+L.r.  0.070522
+Train Loss: 0.0433; Train Corr (pear.): 0.01471; Train Corr (sp.): -0.01810; Per drug corr.: 0.02220
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00611; Val Corr (sp.): -0.01570; Per drug corr.: 0.03939
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  210
+spearman:  210
+Epoch 211
+L.r.  0.070423
+Train Loss: 0.0433; Train Corr (pear.): 0.01478; Train Corr (sp.): -0.01800; Per drug corr.: 0.02222
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00616; Val Corr (sp.): -0.01560; Per drug corr.: 0.03951
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  211
+spearman:  211
+Epoch 212
+L.r.  0.070323
+Train Loss: 0.0433; Train Corr (pear.): 0.01485; Train Corr (sp.): -0.01789; Per drug corr.: 0.02213
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00622; Val Corr (sp.): -0.01550; Per drug corr.: 0.03950
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  212
+spearman:  212
+Epoch 213
+L.r.  0.070225
+Train Loss: 0.0433; Train Corr (pear.): 0.01492; Train Corr (sp.): -0.01777; Per drug corr.: 0.02229
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00627; Val Corr (sp.): -0.01540; Per drug corr.: 0.03929
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  213
+spearman:  213
+Epoch 214
+L.r.  0.070126
+Train Loss: 0.0433; Train Corr (pear.): 0.01499; Train Corr (sp.): -0.01769; Per drug corr.: 0.02228
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00632; Val Corr (sp.): -0.01531; Per drug corr.: 0.03951
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  214
+spearman:  214
+Epoch 215
+L.r.  0.070028
+Train Loss: 0.0433; Train Corr (pear.): 0.01506; Train Corr (sp.): -0.01761; Per drug corr.: 0.02238
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00638; Val Corr (sp.): -0.01519; Per drug corr.: 0.03952
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  215
+spearman:  215
+Epoch 216
+L.r.  0.06993
+Train Loss: 0.0433; Train Corr (pear.): 0.01513; Train Corr (sp.): -0.01751; Per drug corr.: 0.02229
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00643; Val Corr (sp.): -0.01512; Per drug corr.: 0.03953
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  216
+spearman:  216
+Epoch 217
+L.r.  0.069832
+Train Loss: 0.0433; Train Corr (pear.): 0.01520; Train Corr (sp.): -0.01738; Per drug corr.: 0.02230
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00649; Val Corr (sp.): -0.01504; Per drug corr.: 0.03930
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  217
+spearman:  217
+Epoch 218
+L.r.  0.069735
+Train Loss: 0.0433; Train Corr (pear.): 0.01527; Train Corr (sp.): -0.01731; Per drug corr.: 0.02214
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00654; Val Corr (sp.): -0.01494; Per drug corr.: 0.03941
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  218
+spearman:  218
+Epoch 219
+L.r.  0.069638
+Train Loss: 0.0433; Train Corr (pear.): 0.01535; Train Corr (sp.): -0.01720; Per drug corr.: 0.02235
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00660; Val Corr (sp.): -0.01484; Per drug corr.: 0.03905
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  219
+spearman:  219
+Epoch 220
+L.r.  0.069541
+Train Loss: 0.0433; Train Corr (pear.): 0.01542; Train Corr (sp.): -0.01710; Per drug corr.: 0.02233
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00666; Val Corr (sp.): -0.01475; Per drug corr.: 0.03910
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  220
+spearman:  220
+Epoch 221
+L.r.  0.069444
+Train Loss: 0.0433; Train Corr (pear.): 0.01550; Train Corr (sp.): -0.01701; Per drug corr.: 0.02254
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00672; Val Corr (sp.): -0.01465; Per drug corr.: 0.03913
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  221
+spearman:  221
+Epoch 222
+L.r.  0.069348
+Train Loss: 0.0433; Train Corr (pear.): 0.01557; Train Corr (sp.): -0.01691; Per drug corr.: 0.02249
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00678; Val Corr (sp.): -0.01454; Per drug corr.: 0.03898
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  222
+spearman:  222
+Epoch 223
+L.r.  0.069252
+Train Loss: 0.0433; Train Corr (pear.): 0.01565; Train Corr (sp.): -0.01679; Per drug corr.: 0.02263
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00684; Val Corr (sp.): -0.01443; Per drug corr.: 0.03888
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  223
+spearman:  223
+Epoch 224
+L.r.  0.069156
+Train Loss: 0.0433; Train Corr (pear.): 0.01573; Train Corr (sp.): -0.01669; Per drug corr.: 0.02257
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00690; Val Corr (sp.): -0.01438; Per drug corr.: 0.03885
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  224
+spearman:  224
+Epoch 225
+L.r.  0.069061
+Train Loss: 0.0433; Train Corr (pear.): 0.01580; Train Corr (sp.): -0.01659; Per drug corr.: 0.02265
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00696; Val Corr (sp.): -0.01428; Per drug corr.: 0.03912
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  225
+spearman:  225
+Epoch 226
+L.r.  0.068966
+Train Loss: 0.0433; Train Corr (pear.): 0.01588; Train Corr (sp.): -0.01651; Per drug corr.: 0.02243
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00702; Val Corr (sp.): -0.01419; Per drug corr.: 0.03896
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  226
+spearman:  226
+Epoch 227
+L.r.  0.068871
+Train Loss: 0.0433; Train Corr (pear.): 0.01596; Train Corr (sp.): -0.01640; Per drug corr.: 0.02253
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00709; Val Corr (sp.): -0.01409; Per drug corr.: 0.03899
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  227
+spearman:  227
+Epoch 228
+L.r.  0.068776
+Train Loss: 0.0433; Train Corr (pear.): 0.01604; Train Corr (sp.): -0.01629; Per drug corr.: 0.02267
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00715; Val Corr (sp.): -0.01399; Per drug corr.: 0.03887
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  228
+spearman:  228
+Epoch 229
+L.r.  0.068681
+Train Loss: 0.0433; Train Corr (pear.): 0.01612; Train Corr (sp.): -0.01617; Per drug corr.: 0.02251
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00722; Val Corr (sp.): -0.01389; Per drug corr.: 0.03858
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  229
+spearman:  229
+Epoch 230
+L.r.  0.068587
+Train Loss: 0.0433; Train Corr (pear.): 0.01620; Train Corr (sp.): -0.01609; Per drug corr.: 0.02260
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00728; Val Corr (sp.): -0.01377; Per drug corr.: 0.03888
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  230
+spearman:  230
+Epoch 231
+L.r.  0.068493
+Train Loss: 0.0433; Train Corr (pear.): 0.01628; Train Corr (sp.): -0.01598; Per drug corr.: 0.02245
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00735; Val Corr (sp.): -0.01371; Per drug corr.: 0.03870
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  231
+spearman:  231
+Epoch 232
+L.r.  0.068399
+Train Loss: 0.0433; Train Corr (pear.): 0.01637; Train Corr (sp.): -0.01588; Per drug corr.: 0.02254
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00742; Val Corr (sp.): -0.01359; Per drug corr.: 0.03868
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  232
+spearman:  232
+Epoch 233
+L.r.  0.068306
+Train Loss: 0.0433; Train Corr (pear.): 0.01645; Train Corr (sp.): -0.01577; Per drug corr.: 0.02239
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00748; Val Corr (sp.): -0.01348; Per drug corr.: 0.03806
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  233
+spearman:  233
+Epoch 234
+L.r.  0.068213
+Train Loss: 0.0433; Train Corr (pear.): 0.01653; Train Corr (sp.): -0.01565; Per drug corr.: 0.02271
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00755; Val Corr (sp.): -0.01340; Per drug corr.: 0.03820
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  234
+spearman:  234
+Epoch 235
+L.r.  0.06812
+Train Loss: 0.0433; Train Corr (pear.): 0.01662; Train Corr (sp.): -0.01555; Per drug corr.: 0.02252
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00762; Val Corr (sp.): -0.01330; Per drug corr.: 0.03773
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  235
+spearman:  235
+Epoch 236
+L.r.  0.068027
+Train Loss: 0.0433; Train Corr (pear.): 0.01670; Train Corr (sp.): -0.01546; Per drug corr.: 0.02241
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00769; Val Corr (sp.): -0.01321; Per drug corr.: 0.03794
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  236
+spearman:  236
+Epoch 237
+L.r.  0.067935
+Train Loss: 0.0433; Train Corr (pear.): 0.01678; Train Corr (sp.): -0.01535; Per drug corr.: 0.02233
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00776; Val Corr (sp.): -0.01311; Per drug corr.: 0.03811
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  237
+spearman:  237
+Epoch 238
+L.r.  0.067843
+Train Loss: 0.0433; Train Corr (pear.): 0.01687; Train Corr (sp.): -0.01526; Per drug corr.: 0.02247
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00783; Val Corr (sp.): -0.01301; Per drug corr.: 0.03798
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  238
+spearman:  238
+Epoch 239
+L.r.  0.067751
+Train Loss: 0.0433; Train Corr (pear.): 0.01696; Train Corr (sp.): -0.01515; Per drug corr.: 0.02255
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00791; Val Corr (sp.): -0.01291; Per drug corr.: 0.03799
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  239
+spearman:  239
+Epoch 240
+L.r.  0.067659
+Train Loss: 0.0433; Train Corr (pear.): 0.01704; Train Corr (sp.): -0.01503; Per drug corr.: 0.02239
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00798; Val Corr (sp.): -0.01282; Per drug corr.: 0.03765
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  240
+spearman:  240
+Epoch 241
+L.r.  0.067568
+Train Loss: 0.0433; Train Corr (pear.): 0.01713; Train Corr (sp.): -0.01494; Per drug corr.: 0.02245
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00805; Val Corr (sp.): -0.01269; Per drug corr.: 0.03785
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  241
+spearman:  241
+Epoch 242
+L.r.  0.067476
+Train Loss: 0.0433; Train Corr (pear.): 0.01722; Train Corr (sp.): -0.01483; Per drug corr.: 0.02233
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00813; Val Corr (sp.): -0.01258; Per drug corr.: 0.03763
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  242
+spearman:  242
+Epoch 243
+L.r.  0.067385
+Train Loss: 0.0433; Train Corr (pear.): 0.01730; Train Corr (sp.): -0.01474; Per drug corr.: 0.02240
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00820; Val Corr (sp.): -0.01249; Per drug corr.: 0.03752
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  243
+spearman:  243
+Epoch 244
+L.r.  0.067295
+Train Loss: 0.0433; Train Corr (pear.): 0.01739; Train Corr (sp.): -0.01462; Per drug corr.: 0.02231
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00828; Val Corr (sp.): -0.01239; Per drug corr.: 0.03799
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  244
+spearman:  244
+Epoch 245
+L.r.  0.067204
+Train Loss: 0.0433; Train Corr (pear.): 0.01748; Train Corr (sp.): -0.01449; Per drug corr.: 0.02243
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00835; Val Corr (sp.): -0.01230; Per drug corr.: 0.03773
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  245
+spearman:  245
+Epoch 246
+L.r.  0.067114
+Train Loss: 0.0433; Train Corr (pear.): 0.01757; Train Corr (sp.): -0.01440; Per drug corr.: 0.02246
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00843; Val Corr (sp.): -0.01217; Per drug corr.: 0.03791
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  246
+spearman:  246
+Epoch 247
+L.r.  0.067024
+Train Loss: 0.0433; Train Corr (pear.): 0.01766; Train Corr (sp.): -0.01430; Per drug corr.: 0.02253
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00851; Val Corr (sp.): -0.01211; Per drug corr.: 0.03779
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  247
+spearman:  247
+Epoch 248
+L.r.  0.066934
+Train Loss: 0.0433; Train Corr (pear.): 0.01775; Train Corr (sp.): -0.01418; Per drug corr.: 0.02237
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00858; Val Corr (sp.): -0.01199; Per drug corr.: 0.03744
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  248
+spearman:  248
+Epoch 249
+L.r.  0.066845
+Train Loss: 0.0433; Train Corr (pear.): 0.01783; Train Corr (sp.): -0.01408; Per drug corr.: 0.02219
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00866; Val Corr (sp.): -0.01189; Per drug corr.: 0.03753
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  249
+spearman:  249
+Epoch 250
+L.r.  0.066756
+Train Loss: 0.0433; Train Corr (pear.): 0.01792; Train Corr (sp.): -0.01397; Per drug corr.: 0.02248
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00874; Val Corr (sp.): -0.01178; Per drug corr.: 0.03782
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  250
+spearman:  250
+Epoch 251
+L.r.  0.066667
+Train Loss: 0.0433; Train Corr (pear.): 0.01801; Train Corr (sp.): -0.01387; Per drug corr.: 0.02248
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00882; Val Corr (sp.): -0.01168; Per drug corr.: 0.03773
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  251
+spearman:  251
+Epoch 252
+L.r.  0.066578
+Train Loss: 0.0433; Train Corr (pear.): 0.01810; Train Corr (sp.): -0.01378; Per drug corr.: 0.02234
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00890; Val Corr (sp.): -0.01159; Per drug corr.: 0.03764
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  252
+spearman:  252
+Epoch 253
+L.r.  0.066489
+Train Loss: 0.0433; Train Corr (pear.): 0.01820; Train Corr (sp.): -0.01363; Per drug corr.: 0.02241
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00898; Val Corr (sp.): -0.01148; Per drug corr.: 0.03737
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  253
+spearman:  253
+Epoch 254
+L.r.  0.066401
+Train Loss: 0.0433; Train Corr (pear.): 0.01829; Train Corr (sp.): -0.01355; Per drug corr.: 0.02240
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00906; Val Corr (sp.): -0.01134; Per drug corr.: 0.03760
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  254
+spearman:  254
+Epoch 255
+L.r.  0.066313
+Train Loss: 0.0433; Train Corr (pear.): 0.01838; Train Corr (sp.): -0.01344; Per drug corr.: 0.02232
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00915; Val Corr (sp.): -0.01127; Per drug corr.: 0.03779
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  255
+spearman:  255
+Epoch 256
+L.r.  0.066225
+Train Loss: 0.0433; Train Corr (pear.): 0.01847; Train Corr (sp.): -0.01331; Per drug corr.: 0.02243
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00923; Val Corr (sp.): -0.01109; Per drug corr.: 0.03765
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  256
+spearman:  256
+Epoch 257
+L.r.  0.066138
+Train Loss: 0.0433; Train Corr (pear.): 0.01856; Train Corr (sp.): -0.01321; Per drug corr.: 0.02241
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00931; Val Corr (sp.): -0.01102; Per drug corr.: 0.03746
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  257
+spearman:  257
+Epoch 258
+L.r.  0.06605
+Train Loss: 0.0433; Train Corr (pear.): 0.01865; Train Corr (sp.): -0.01310; Per drug corr.: 0.02237
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00940; Val Corr (sp.): -0.01091; Per drug corr.: 0.03757
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  258
+spearman:  258
+Epoch 259
+L.r.  0.065963
+Train Loss: 0.0433; Train Corr (pear.): 0.01874; Train Corr (sp.): -0.01298; Per drug corr.: 0.02236
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00948; Val Corr (sp.): -0.01083; Per drug corr.: 0.03749
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  259
+spearman:  259
+Epoch 260
+L.r.  0.065876
+Train Loss: 0.0433; Train Corr (pear.): 0.01884; Train Corr (sp.): -0.01288; Per drug corr.: 0.02232
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00956; Val Corr (sp.): -0.01073; Per drug corr.: 0.03779
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  260
+spearman:  260
+Epoch 261
+L.r.  0.065789
+Train Loss: 0.0433; Train Corr (pear.): 0.01893; Train Corr (sp.): -0.01277; Per drug corr.: 0.02232
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00965; Val Corr (sp.): -0.01059; Per drug corr.: 0.03727
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  261
+spearman:  261
+Epoch 262
+L.r.  0.065703
+Train Loss: 0.0433; Train Corr (pear.): 0.01902; Train Corr (sp.): -0.01266; Per drug corr.: 0.02253
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00974; Val Corr (sp.): -0.01049; Per drug corr.: 0.03744
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  262
+spearman:  262
+Epoch 263
+L.r.  0.065617
+Train Loss: 0.0433; Train Corr (pear.): 0.01912; Train Corr (sp.): -0.01253; Per drug corr.: 0.02251
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00982; Val Corr (sp.): -0.01037; Per drug corr.: 0.03683
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  263
+spearman:  263
+Epoch 264
+L.r.  0.065531
+Train Loss: 0.0433; Train Corr (pear.): 0.01921; Train Corr (sp.): -0.01244; Per drug corr.: 0.02257
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.00991; Val Corr (sp.): -0.01026; Per drug corr.: 0.03701
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  264
+spearman:  264
+Epoch 265
+L.r.  0.065445
+Train Loss: 0.0433; Train Corr (pear.): 0.01930; Train Corr (sp.): -0.01234; Per drug corr.: 0.02254
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01000; Val Corr (sp.): -0.01017; Per drug corr.: 0.03702
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  265
+spearman:  265
+Epoch 266
+L.r.  0.065359
+Train Loss: 0.0433; Train Corr (pear.): 0.01940; Train Corr (sp.): -0.01221; Per drug corr.: 0.02262
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01009; Val Corr (sp.): -0.01005; Per drug corr.: 0.03703
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  266
+spearman:  266
+Epoch 267
+L.r.  0.065274
+Train Loss: 0.0433; Train Corr (pear.): 0.01949; Train Corr (sp.): -0.01210; Per drug corr.: 0.02282
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01018; Val Corr (sp.): -0.00991; Per drug corr.: 0.03673
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  267
+spearman:  267
+Epoch 268
+L.r.  0.065189
+Train Loss: 0.0433; Train Corr (pear.): 0.01959; Train Corr (sp.): -0.01200; Per drug corr.: 0.02276
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01027; Val Corr (sp.): -0.00979; Per drug corr.: 0.03657
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  268
+spearman:  268
+Epoch 269
+L.r.  0.065104
+Train Loss: 0.0433; Train Corr (pear.): 0.01968; Train Corr (sp.): -0.01189; Per drug corr.: 0.02283
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01036; Val Corr (sp.): -0.00972; Per drug corr.: 0.03744
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  269
+spearman:  269
+Epoch 270
+L.r.  0.06502
+Train Loss: 0.0433; Train Corr (pear.): 0.01978; Train Corr (sp.): -0.01178; Per drug corr.: 0.02276
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01045; Val Corr (sp.): -0.00962; Per drug corr.: 0.03715
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  270
+spearman:  270
+Epoch 271
+L.r.  0.064935
+Train Loss: 0.0433; Train Corr (pear.): 0.01987; Train Corr (sp.): -0.01165; Per drug corr.: 0.02280
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01054; Val Corr (sp.): -0.00948; Per drug corr.: 0.03690
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  271
+spearman:  271
+Epoch 272
+L.r.  0.064851
+Train Loss: 0.0433; Train Corr (pear.): 0.01997; Train Corr (sp.): -0.01153; Per drug corr.: 0.02286
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01064; Val Corr (sp.): -0.00938; Per drug corr.: 0.03722
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  272
+spearman:  272
+Epoch 273
+L.r.  0.064767
+Train Loss: 0.0433; Train Corr (pear.): 0.02006; Train Corr (sp.): -0.01142; Per drug corr.: 0.02300
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01073; Val Corr (sp.): -0.00926; Per drug corr.: 0.03736
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  273
+spearman:  273
+Epoch 274
+L.r.  0.064683
+Train Loss: 0.0433; Train Corr (pear.): 0.02016; Train Corr (sp.): -0.01130; Per drug corr.: 0.02300
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01083; Val Corr (sp.): -0.00916; Per drug corr.: 0.03761
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  274
+spearman:  274
+Epoch 275
+L.r.  0.064599
+Train Loss: 0.0433; Train Corr (pear.): 0.02025; Train Corr (sp.): -0.01119; Per drug corr.: 0.02294
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01092; Val Corr (sp.): -0.00903; Per drug corr.: 0.03779
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  275
+spearman:  275
+Epoch 276
+L.r.  0.064516
+Train Loss: 0.0433; Train Corr (pear.): 0.02035; Train Corr (sp.): -0.01110; Per drug corr.: 0.02286
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01102; Val Corr (sp.): -0.00892; Per drug corr.: 0.03772
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  276
+spearman:  276
+Epoch 277
+L.r.  0.064433
+Train Loss: 0.0433; Train Corr (pear.): 0.02045; Train Corr (sp.): -0.01098; Per drug corr.: 0.02293
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01112; Val Corr (sp.): -0.00883; Per drug corr.: 0.03734
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  277
+spearman:  277
+Epoch 278
+L.r.  0.06435
+Train Loss: 0.0433; Train Corr (pear.): 0.02055; Train Corr (sp.): -0.01085; Per drug corr.: 0.02275
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01122; Val Corr (sp.): -0.00869; Per drug corr.: 0.03832
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  278
+spearman:  278
+Epoch 279
+L.r.  0.064267
+Train Loss: 0.0433; Train Corr (pear.): 0.02064; Train Corr (sp.): -0.01074; Per drug corr.: 0.02283
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01131; Val Corr (sp.): -0.00858; Per drug corr.: 0.03821
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  279
+spearman:  279
+Epoch 280
+L.r.  0.064185
+Train Loss: 0.0433; Train Corr (pear.): 0.02074; Train Corr (sp.): -0.01063; Per drug corr.: 0.02299
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01141; Val Corr (sp.): -0.00845; Per drug corr.: 0.03836
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  280
+spearman:  280
+Epoch 281
+L.r.  0.064103
+Train Loss: 0.0433; Train Corr (pear.): 0.02084; Train Corr (sp.): -0.01051; Per drug corr.: 0.02293
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01152; Val Corr (sp.): -0.00835; Per drug corr.: 0.03786
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  281
+spearman:  281
+Epoch 282
+L.r.  0.06402
+Train Loss: 0.0433; Train Corr (pear.): 0.02094; Train Corr (sp.): -0.01040; Per drug corr.: 0.02296
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01162; Val Corr (sp.): -0.00826; Per drug corr.: 0.03849
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  282
+spearman:  282
+Epoch 283
+L.r.  0.063939
+Train Loss: 0.0433; Train Corr (pear.): 0.02104; Train Corr (sp.): -0.01027; Per drug corr.: 0.02291
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01172; Val Corr (sp.): -0.00812; Per drug corr.: 0.03843
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  283
+spearman:  283
+Epoch 284
+L.r.  0.063857
+Train Loss: 0.0433; Train Corr (pear.): 0.02114; Train Corr (sp.): -0.01016; Per drug corr.: 0.02283
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01182; Val Corr (sp.): -0.00800; Per drug corr.: 0.03870
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  284
+spearman:  284
+Epoch 285
+L.r.  0.063776
+Train Loss: 0.0433; Train Corr (pear.): 0.02124; Train Corr (sp.): -0.01004; Per drug corr.: 0.02297
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01193; Val Corr (sp.): -0.00793; Per drug corr.: 0.03870
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  285
+spearman:  285
+Epoch 286
+L.r.  0.063694
+Train Loss: 0.0433; Train Corr (pear.): 0.02134; Train Corr (sp.): -0.00993; Per drug corr.: 0.02298
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01203; Val Corr (sp.): -0.00781; Per drug corr.: 0.03875
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  286
+spearman:  286
+Epoch 287
+L.r.  0.063613
+Train Loss: 0.0433; Train Corr (pear.): 0.02144; Train Corr (sp.): -0.00982; Per drug corr.: 0.02300
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01214; Val Corr (sp.): -0.00768; Per drug corr.: 0.03874
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  287
+spearman:  287
+Epoch 288
+L.r.  0.063532
+Train Loss: 0.0433; Train Corr (pear.): 0.02154; Train Corr (sp.): -0.00971; Per drug corr.: 0.02295
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01225; Val Corr (sp.): -0.00757; Per drug corr.: 0.03937
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  288
+spearman:  288
+Epoch 289
+L.r.  0.063452
+Train Loss: 0.0433; Train Corr (pear.): 0.02164; Train Corr (sp.): -0.00959; Per drug corr.: 0.02285
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01235; Val Corr (sp.): -0.00743; Per drug corr.: 0.03915
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  289
+spearman:  289
+Epoch 290
+L.r.  0.063371
+Train Loss: 0.0433; Train Corr (pear.): 0.02174; Train Corr (sp.): -0.00948; Per drug corr.: 0.02287
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01246; Val Corr (sp.): -0.00734; Per drug corr.: 0.03932
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  290
+spearman:  290
+Epoch 291
+L.r.  0.063291
+Train Loss: 0.0433; Train Corr (pear.): 0.02184; Train Corr (sp.): -0.00936; Per drug corr.: 0.02289
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01257; Val Corr (sp.): -0.00722; Per drug corr.: 0.03898
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  291
+spearman:  291
+Epoch 292
+L.r.  0.063211
+Train Loss: 0.0433; Train Corr (pear.): 0.02194; Train Corr (sp.): -0.00924; Per drug corr.: 0.02290
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01268; Val Corr (sp.): -0.00709; Per drug corr.: 0.03893
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  292
+spearman:  292
+Epoch 293
+L.r.  0.063131
+Train Loss: 0.0433; Train Corr (pear.): 0.02204; Train Corr (sp.): -0.00912; Per drug corr.: 0.02286
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01279; Val Corr (sp.): -0.00699; Per drug corr.: 0.03890
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  293
+spearman:  293
+Epoch 294
+L.r.  0.063052
+Train Loss: 0.0433; Train Corr (pear.): 0.02214; Train Corr (sp.): -0.00902; Per drug corr.: 0.02286
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01290; Val Corr (sp.): -0.00686; Per drug corr.: 0.03927
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  294
+spearman:  294
+Epoch 295
+L.r.  0.062972
+Train Loss: 0.0433; Train Corr (pear.): 0.02225; Train Corr (sp.): -0.00889; Per drug corr.: 0.02290
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01302; Val Corr (sp.): -0.00676; Per drug corr.: 0.03912
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  295
+spearman:  295
+Epoch 296
+L.r.  0.062893
+Train Loss: 0.0433; Train Corr (pear.): 0.02235; Train Corr (sp.): -0.00879; Per drug corr.: 0.02281
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01313; Val Corr (sp.): -0.00663; Per drug corr.: 0.03917
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  296
+spearman:  296
+Epoch 297
+L.r.  0.062814
+Train Loss: 0.0433; Train Corr (pear.): 0.02245; Train Corr (sp.): -0.00866; Per drug corr.: 0.02288
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01324; Val Corr (sp.): -0.00652; Per drug corr.: 0.03932
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  297
+spearman:  297
+Epoch 298
+L.r.  0.062735
+Train Loss: 0.0433; Train Corr (pear.): 0.02255; Train Corr (sp.): -0.00856; Per drug corr.: 0.02298
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01336; Val Corr (sp.): -0.00638; Per drug corr.: 0.03929
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  298
+spearman:  298
+Epoch 299
+L.r.  0.062657
+Train Loss: 0.0433; Train Corr (pear.): 0.02265; Train Corr (sp.): -0.00843; Per drug corr.: 0.02316
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01347; Val Corr (sp.): -0.00631; Per drug corr.: 0.03954
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  299
+spearman:  299
+Epoch 300
+L.r.  0.062578
+Train Loss: 0.0433; Train Corr (pear.): 0.02275; Train Corr (sp.): -0.00834; Per drug corr.: 0.02319
+Allocated after train: 1.249 GB
+Val Loss: 0.0464; Val Corr (pear.): 0.01358; Val Corr (sp.): -0.00617; Per drug corr.: 0.03972
+Allocated after val: 0.54 GB
+Epoch time: 0m 5s
+-----------------
+pearson:  300
+spearman:  300
+per drug:  300
+Best performed model (loss) (epoch)	110 loss: 0.046378
+Best performed model (pearson) (epoch)	300 corr: 0.013584
+Best performed model (per drug) (epoch)	300 corr: 0.039724
+Best performed model (spearman) (epoch)	300 corr: -0.006174
+Training complete in 24m 38s
+Test loss: 0.0461
+Test Corr (p): 0.0157
+Test Corr (s): -0.0150
+Per drug corr.: 0.0377
+Low corr.: nan
+Allocated: 0.5 GB
+Test loss: 0.0461
+Test Corr (p): 0.0058
+Test Corr (s): -0.0331
+Per drug corr.: 0.0206
+Low corr.: nan
+Allocated: 0.5 GB
+Test loss: 0.0461
+Test Corr (p): 0.0157
+Test Corr (s): -0.0150
+Per drug corr.: 0.0377
+Low corr.: nan
+Allocated: 0.5 GB
+Test loss: 0.0461
+Test Corr (p): 0.0157
+Test Corr (s): -0.0150
+Per drug corr.: 0.0377
+Low corr.: nan
+Allocated: 0.5 GB
+(-)-Epigallocatechin gallate 0.07142857142857142
+(-)-Parthenolide 0.16506205436421884
+1,9-Pyrazoloanthrone 0.6428571428571428
+16-beta-bromoandrosterone 0.37142857142857144
+1S,3R-RSL-3 0.2818181818181818
+3-Cl-AHPC -0.08510677611520903
+5-Fluorouracil 0.10689054489908822
+968 -0.3999999999999999
+A-804598 -0.7499999999999999
+AA-COCF3 -0.2571428571428571
+Abiraterone nan
+Abt-737 -0.005494505494505495
+AC55649 0.4999999999999999
+Adavosertib -0.3354053441521974
+Afatinib -0.21534695686142136
+AGK-2 -0.291794660966431
+Alisertib 0.5176008397410454
+alisertib:navitoclax (2:1 mol/mol) 0.14285714285714285
+Alpelisib -0.22533161403404064
+Alvocidib 0.09481231628865779
+AM-580 -0.6
+apicidin 0.2333333333333333
+AT-406 -0.9999999999999998
+AT7867 -0.4842135070175277
+Austocystin D -0.7999999999999998
+Avicin D 0.47619047619047616
+Avrainvillamide 0.4999999999999999
+Axitinib -0.38461538461538464
+AZ-3146 -0.3142857142857143
+Azacitidine -0.9999999999999998
+Azd-1480 -0.36474332620803873
+AZD-7545 0.06666666666666665
+Azd4547 -0.43446291594798686
+AZD6482 0.21487614771671004
+AZD7762 -0.40560648448659015
+AZD8055 -0.7372771761601775
+Bafilomycin A1 nan
+Barasertib 0.14285714285714285
+Bardoxolone methyl -0.14285714285714285
+Bax Channel Blocker 0.9999999999999998
+BCL-LZH-4 -0.23190841426097938
+BEC nan
+Belinostat 0.46848748060169065
+Bemcentinib 0.0
+Bendamustine 0.6999999999999998
+Betulinic acid 0.7666666666666666
+Bexarotene 0.2
+BI-2536 0.42857142857142855
+BIBR-1532 0.2818181818181818
+Birinapant -0.4523809523809524
+BIX-01294 -0.37142857142857144
+Blebbistatin -0.9999999999999998
+Bleomycin a2 0.2314058367532416
+BMS-195614 0.12727272727272726
+BMS-270394 -0.46381682852195877
+BMS-345541 free base 0.007532970043688174
+Bms-754807 0.11585581233062979
+Bortezomib -0.17497499684725742
+Bosutinib 0.2907336735058088
+BRD-A02303741 0.7499999999999999
+BRD-A02303741:carboplatin (1:1 mol/mol) -0.16666666666666666
+BRD-A02303741:navitoclax (2:1 mol/mol) -0.5238095238095238
+BRD-A05715709 0.7714285714285715
+BRD-A71883111 0.6999999999999998
+BRD-A86708339 -0.4999999999999999
+BRD-A94377914 0.4999999999999999
+BRD-K01737880 nan
+BRD-K02251932 -0.5999999999999999
+BRD-K02492147 0.0
+BRD-K03536150 0.5151515151515151
+BRD-K03911514 0.0
+BRD-K04800985 -0.18333333333333332
+BRD-K07442505 0.37142857142857144
+BRD-K09344309 nan
+BRD-K09587429 0.3999999999999999
+BRD-K11533227 0.19999999999999996
+BRD-K13185470 0.9999999999999998
+BRD-K13999467 0.32167832167832167
+BRD-K14844214 0.6666666666666666
+BRD-K16130065 0.7999999999999998
+BRD-K16147474 -0.9999999999999998
+BRD-K17060750 -0.42857142857142855
+BRD-K19103580 0.3142857142857143
+BRD-K20514654 nan
+BRD-K24690302 0.17857142857142855
+BRD-K26531177 -0.19999999999999996
+BRD-K27188169 -0.14285714285714285
+BRD-K27188169:navitoclax (2:1 mol/mol) 0.29999999999999993
+BRD-K27224038 -0.7999999999999998
+BRD-K27986637 -0.4999999999999999
+BRD-K28456706 -0.29999999999999993
+BRD-K29086754 nan
+BRD-K29313308 -0.4727272727272727
+BRD-K30019337 -0.4999999999999999
+BRD-K30748066 nan
+BRD-K33199242 -0.02727272727272727
+BRD-K33514849 nan
+BRD-K34099515 0.3999999999999999
+BRD-K34222889 0.30952380952380953
+BRD-K34485477 nan
+BRD-K35604418 0.24999999999999997
+BRD-K37390332 0.6785714285714285
+BRD-K41334119 nan
+BRD-K41597374 0.07142857142857142
+BRD-K42260513 0.09999999999999998
+BRD-K44224150 -0.4999999999999999
+BRD-K45681478 -0.5714285714285714
+BRD-K48334597 0.7999999999999998
+BRD-K48477130 -0.4999999999999999
+BRD-K49290616 -0.4999999999999999
+BRD-K50799972 0.21428571428571425
+BRD-K51490254 0.23809523809523808
+BRD-K51831558 -0.4999999999999999
+BRD-K52037352 -0.006060606060606061
+BRD-K55116708 0.3575757575757576
+BRD-K55473186 -0.9486832980505138
+BRD-K58730230 -0.4999999999999999
+BRD-K61166597 -0.4999999999999999
+BRD-K63431240 0.22424242424242424
+BRD-K64610608 -0.5357142857142857
+BRD-K66453893 0.09999999999999999
+BRD-K66532283 -0.6
+BRD-K70511574 -0.6999999999999998
+BRD-K71781559 0.5
+BRD-K71935468 0.19999999999999996
+BRD-K75293299 nan
+BRD-K78574327 -0.4999999999999999
+BRD-K79669418 -0.4999999999999999
+BRD-K80183349 0.21428571428571427
+BRD-K84807411 0.4999999999999999
+BRD-K85133207 -0.5999999999999999
+BRD-K86535717 0.3999999999999999
+BRD-K88742110 -0.4909090909090909
+BRD-K90370028 -0.4999999999999999
+BRD-K92856060 -0.6181818181818182
+BRD-K94991378 0.4833333333333333
+BRD-K96431673 0.9999999999999998
+BRD-K96970199 nan
+BRD-K97651142 0.14285714285714285
+BRD-K99006945 0.19999999999999996
+BRD-K99584050 0.4999999999999999
+BRD-M00053801 0.19999999999999996
+BRD1812 -0.4636363636363636
+BRD1835 0.6428571428571428
+BRD4132 -0.7142857142857142
+BRD6340 -0.44642857142857145
+BRD8899 -0.8982196964349441
+BRD8958 -0.29999999999999993
+BRD9647 -0.03636363636363636
+BRD9876 0.3928571428571428
+BRD9876:MK-1775 (4:1 mol/mol) nan
+Brefeldin A -0.9428571428571428
+Brivanib -0.024827798764466488
+Cabozantinib -0.016666666666666663
+Canertinib -0.325991980225639
+carboplatin:etoposide (40:17 mol/mol) -0.10303030303030303
+carboplatin:UNC0638 (2:1 mol/mol) 0.07142857142857142
+Carboplatinum -0.22637362637362637
+CAY10594 0.2619047619047619
+CAY10618 0.06833730713673078
+CBB-1007 -0.4999999999999999
+CCT036477 -0.47619047619047616
+CD-1530 0.3142857142857143
+CD-437 0.09999999999999998
+Cediranib -0.03592878785739777
+ceranib-2 -0.21428571428571425
+Cerulenin 0.2
+Ch-55 -0.049999999999999996
+CHEMBL1222381 0.5999999999999999
+CHEMBL374350 0.6071428571428571
+Chir-99021 0.2032967032967033
+Chlorambucil 0.8857142857142857
+CHM-1 0.023809523809523808
+CI-976 -0.4857142857142857
+Ciclopirox 0.02857142857142857
+CID-5951923 -0.8285714285714286
+CIL41 -0.5357142857142857
+CIL55 0.9999999999999998
+CIL55A 0.4999999999999999
+CIL56 0.37142857142857144
+CIL70 0.4999999999999999
+Cimetidine nan
+Clofarabine 0.37690143708164003
+Compound 1541A 0.9999999999999998
+compound 1B 0.21428571428571427
+Compound 23 citrate 0.19999999999999996
+Compound 7d-cis -0.14285714285714285
+CR-1-31B -0.01818181818181818
+Crizotinib 0.12527472527472527
+crizotinib:PLX-4032 (2:1 mol/mol) 0.5833333333333333
+Cucurbitacin I 0.4285714285714285
+Curcumin 0.3999999999999999
+cyanoquinoline 11 -0.6999999999999998
+Cyclophosphamide -0.725623245649734
+Cyclosporin A 0.08241758241758242
+Cytarabine -0.14522201251755368
+Cytochalasin B 0.44999999999999996
+Dabrafenib -0.15087812175183835
+Dactolisib -0.32231527262058657
+Daporinad -0.4643748660588561
+Darinaparsin 0.9999999999999998
+Dasatinib 0.25131849005699286
+DBeQ -0.17272727272727273
+Decitabine 0.39999999999999997
+decitabine:carboplatin (1:1 mol/mol) 0.5999999999999999
+decitabine:navitoclax (2:1 mol/mol) 0.3142857142857143
+Degrasyn 0.6
+Dexamethasone 0.2833333333333333
+Dinaciclib -0.21757512627648798
+Docetaxel -0.04949549096135709
+docetaxel:tanespimycin (2:1 mol/mol) -0.5476190476190477
+Doramapimod -0.06475910958496596
+Doxorubicin -0.3053648005738049
+doxorubicin:navitoclax (2:1 mol/mol) 0.21428571428571425
+DTIC-Dome 0.033333333333333326
+ELCPK -0.4999999999999999
+Elocalcitol -0.07142857142857142
+Entinostat 0.039190117362989545
+Erastin 0.023952525238265177
+Erlotinib 0.3333333333333333
+erlotinib:PLX-4032 (2:1 mol/mol) 0.4285714285714285
+Etomoxir -0.4999999999999999
+Etoposide 0.5714285714285714
+ETP-46464 -0.9999999999999998
+EX-527 -0.09030858911656217
+Fedratinib 0.2883437753350776
+FGIN-1-27 0.4999999999999999
+Fingolimod -0.7818181818181819
+Fluvastatin 0.2
+Foretinib 0.425420857484569
+FQI-1 -0.19999999999999996
+FQI-2 -0.3999999999999999
+FSC231 -0.4999999999999999
+Fulvestrant -0.3686570146417667
+Fumonisin B(1) -0.21428571428571425
+Galunisertib nan
+GANT-61 0.4999999999999999
+GDC-0879 -0.4285714285714285
+Gefitinib 0.46153846153846156
+Gemcitabine 0.1491465004330568
+GMX-1778 -0.2857142857142857
+Gossypol 0.11715583722580122
+GSK-3 inhibitor IX -0.07294866524160774
+Gsk-461364 0.45454545454545453
+GSK-J4 nan
+GSK1059615 -0.754504545005353
+GSK2636771 0.0
+GSK4112 0.35714285714285715
+GW-405833 0.6999999999999998
+GW843682X -0.14285714285714285
+HBX-41108 -0.3999999999999999
+HC-067047 -0.4999999999999999
+HLI 373 -0.11904761904761904
+Hyperforin 0.2857142857142857
+I-Bet151 (gsk1210151A) 0.01978021978021978
+Ibrutinib -0.6428571428571428
+IC-87114 -0.15994811963266706
+Idelalisib 0.15022107602269374
+Ifosfamide 0.9999999999999998
+Imatinib -0.3404271044608361
+Importazole -0.047619047619047616
+Incyclinide 0.20909090909090908
+Indisulam -0.011976262619132589
+IPR-456 -0.7142857142857143
+Isoevodiamine -0.4999999999999999
+Isoliquiritigenin 0.4999999999999999
+Isonicotinohydroxamic acid 0.1333333333333333
+ISOX 0.17857142857142855
+ISOX:bortezomib (250:1 mol/mol) -0.3142857142857143
+Istradefylline nan
+Itraconazole 0.5428571428571428
+IU1 -0.19999999999999996
+Ixazomib -0.09523809523809523
+JQ-1:carboplatin (1:1 mol/mol) -0.6190476190476191
+JQ-1:MK-0752 (1:1 mol/mol) -0.16363636363636364
+JQ-1:navitoclax (2:1 mol/mol) -0.14285714285714285
+JQ-1:UNC0638 (2:1 mol/mol) -0.9642857142857142
+JQ-1:vorinostat (2:1 mol/mol) 0.5999999999999999
+JQ1 compound -0.6545454545454545
+JW-480 0.14285714285714285
+JW-55 nan
+JW-74 0.9999999999999998
+KH-CB19 0.6999999999999998
+KHS101 -0.9999999999999998
+Ki8751 0.0
+KIN001-135 0.4383270544925822
+Ko-143 -0.17857142857142855
+KPT185 -0.9999999999999998
+KU 0060648 -0.2606060606060606
+Ku-0063794 0.05454545454545454
+KU-55933 0.11294808698670127
+KU-60019 0.3999999999999999
+KW-2449 -0.3999999999999999
+KX2-391 0.6
+L-685458 -0.2333333333333333
+Lapatinib -0.3361965720928139
+LE-135 0.07142857142857142
+Lenvatinib -0.6
+Leptomycin B -0.6999999999999998
+Linifanib 0.7762237762237763
+Linsitinib 0.30260224558743076
+Lomeguatrib 0.7333333333333333
+Lovastatin -0.11904761904761904
+LRRK2-IN-1 -0.4857142857142857
+LY-2183240 0.5428571428571428
+Manumycin 0.41666666666666663
+Marinopyrrole A 0.0
+Masitinib 0.3516483516483517
+Mdivi-1 -0.6
+Merck60 -0.2571428571428571
+Met Kinase Inhibitor 0.08103144496252941
+Methotrexate 0.11515151515151516
+Methylstat 0.19999999999999996
+MGCD-265 analog -0.46428571428571425
+MI-1 -0.16666666666666666
+MI-2 0.4999999999999999
+Mitomycin -0.08010613039562271
+MK-0752 -0.4999999999999999
+MK-2206 0.1570248771775958
+ML006 -0.5714285714285714
+ML031 -0.006060606060606061
+ML050 -0.03571428571428571
+ML083 -0.39999999999999997
+ML162 -0.8166666666666665
+ML203 -0.023809523809523808
+ML210 0.38095238095238093
+ML239 -0.09999999999999998
+ML258 0.7714285714285715
+ML311 0.36666666666666664
+ML312 0.0
+ML320 -0.4523809523809524
+ML334 diastereomer 0.5999999999999999
+MLN2480 -0.4999999999999999
+Molibresib 0.4487810810779004
+Momelotinib 0.5999999999999999
+Myricetin -0.296969696969697
+Myriocin 0.9999999999999998
+N-Hexanoylsphingosine 0.6904761904761905
+N-Phthalyl-L-tryptophan -0.42857142857142855
+N9-Isopropyl-olomoucine -0.16666666666666666
+nakiterpiosin nan
+Narciclasine -0.38095238095238093
+Navitoclax 0.1981556846719229
+navitoclax:birinapant (1:1 mol/mol) -0.9999999999999998
+navitoclax:gemcitabine (1:1 mol/mol) 0.16666666666666666
+navitoclax:MST-312 (1:1 mol/mol) 0.5357142857142857
+navitoclax:piperlongumine (1:1 mol/mol) 0.49999999999999994
+navitoclax:pluripotin (1:1 mol/mol) -0.4999999999999999
+navitoclax:PLX-4032 (1:1 mol/mol) -0.4285714285714285
+navitoclax:sorafenib (1:1 mol/mol) -0.3241758241758242
+necrostatin-1 -0.5357142857142857
+Necrostatin-7 0.7714285714285715
+Necrosulfonamide -0.7999999999999998
+Nelarabine 0.4153846153846154
+Neopeltolide 0.7999999999999998
+Neratinib 0.31666666666666665
+Niclosamide 0.15151515151515152
+Nilotinib -0.4370737485280421
+Nintedanib -0.38813190023063965
+NPC-26 -0.16666666666666666
+NSC 74859 0.5999999999999999
+NSC19630 0.6666666666666666
+NSC23766 0.7999999999999998
+NSC30930 0.6833333333333332
+NSC48300 -0.07142857142857142
+NSC632839 -0.7999999999999998
+NSC95397 0.7857142857142856
+Nutlin-3 0.11904761904761904
+NVP-231 -0.4999999999999999
+NVP-ADW742 -0.15405791740660427
+NVP-BSK805 0.4857142857142857
+Nvp-tae 684 0.6778302010921357
+o6-Benzylguanine -0.7999999999999998
+Obatoclax 0.11558686727582712
+Olaparib 0.6352941176470588
+Oligomycin A 0.0
+Omacetaxine mepesuccinate -0.25941649671427414
+Onalespib -0.9999999999999998
+Osi-027 0.3422920430900753
+Osi-930 0.05857791861290061
+Ouabain 0.44545454545454544
+Oxaliplatin 0.33767143046784154
+Pac-1 0.2754831389919543
+Paclitaxel 0.013566989165997507
+Palmostatin B 0.2571428571428571
+Pandacostat -0.21428571428571427
+Panobinostat 0.4223457131380321
+Parbendazole 0.3999999999999999
+Pazopanib 0.26656877215791736
+PD 153035 -0.3999999999999999
+PD318088 0.14285714285714285
+PDMP 0.0
+Pevonedistat -0.3008862648555069
+PF 4800567 Hydrochloride 0.6667366910003157
+PF-03758309 nan
+PF-184 0.9761904761904762
+PF-543 0.5364356764577848
+PF-573228 -0.02857142857142857
+PF-750 -0.4833333333333333
+Pha-793887 -0.040465979402371365
+Phloretin -0.19999999999999998
+PI-103 0.3828385154920852
+Pictilisib 0.0536928267135843
+pifithrin-alpha 0.9999999999999998
+pifithrin-mu 0.09999999999999998
+PIK-93 0.26153846153846155
+Piperlongumine -0.02822088013917781
+piperlongumine:MST-312 (1:1 mol/mol) -0.07142857142857142
+pitstop2 0.23190841426097938
+PL-DI -0.42857142857142855
+Platinum -0.9999999999999998
+Pluripotin 0.09999999999999998
+PLX4720 0.20778706104096836
+Prima-1 -0.21428571428571425
+PRIMA-1-Met 0.16666666666666666
+PRL-3 Inhibitor I 0.05454545454545454
+Procarbazine 0.3999999999999999
+Prochlorperazine 0.5999999999999999
+Purmorphamine 0.8214285714285713
+PX-12 -0.3214285714285714
+Pyr-41 0.5333333333333332
+QS11 -0.10778636357219329
+Quizartinib 0.2833565266585757
+QW-BI-011 nan
+R406 (Free base) -0.09999999999999998
+RAD51 inhibitor B02 0.2606060606060606
+Raf265(chir-265) 0.6071428571428571
+Regorafenib -0.15151515151515152
+Repligen 136 -0.16666666666666666
+Rigosertib 0.7425282823862205
+Rita -0.7999999999999998
+RO4929097 -0.4999999999999999
+Ruxolitinib 0.19063146267259648
+salermide -0.46428571428571425
+salermide:PLX-4032 (12:1 mol/mol) 0.6571428571428571
+Saracatinib -0.13636363636363635
+SB-225002 -0.5714285714285714
+SB-431542 -0.10303030303030303
+SB-525334 -0.03592878785739777
+SB-743921 0.7999999999999998
+SCH-529074 -0.07142857142857142
+SCH-79797 0.2619047619047619
+Selumetinib 0.14993924975385178
+selumetinib:BRD-A02303741 (4:1 mol/mol) 0.3516483516483517
+selumetinib:decitabine (4:1 mol/mol) -0.857142857142857
+selumetinib:GDC-0941 (4:1 mol/mol) 0.02727272727272727
+selumetinib:JQ-1 (4:1 mol/mol) 0.14285714285714285
+selumetinib:MK-2206 (8:1 mol/mol) 0.2833333333333333
+selumetinib:navitoclax (8:1 mol/mol) -0.3999999999999999
+selumetinib:piperlongumine (8:1 mol/mol) 0.3333333333333333
+selumetinib:PLX-4032 (8:1 mol/mol) 0.16483516483516483
+selumetinib:tretinoin (2:1 mol/mol) 0.3999999999999999
+selumetinib:UNC0638 (4:1 mol/mol) 0.19047619047619047
+selumetinib:vorinostat (8:1 mol/mol) 0.38095238095238093
+Semagacestat -0.49999999999999994
+Sepantronium bromide 0.119683930260252
+Serdemetan -0.055944055944055944
+serdemetan:SCH-529074 (1:1 mol/mol) -0.7142857142857143
+Sgx-523 0.14285714285714285
+SID 26681509 0.11904761904761904
+Sildenafil 0.9999999999999998
+Silmitasertib -0.3999999999999999
+Simvastatin 0.7999999999999998
+Sirolimus -0.050114025233602574
+sirolimus:bortezomib (250:1 mol/mol) -0.7142857142857143
+Sitagliptin 0.9999999999999998
+SJ-172550 0.42857142857142855
+Skepinone-L 0.9428571428571428
+SKI-II 0.7142857142857142
+SMER-3 -0.16216874328520062
+SN-38 -0.06813186813186813
+SNS-032 -0.4937281711658766
+Snx-2112 -0.03437697665077005
+SNX-2112:bortezomib (250:1 mol/mol) -0.18333333333333332
+Sonidegib -0.06363636363636363
+Sorafenib -0.2949968134115856
+Sotrastaurin 0.29999999999999993
+spautin-1 -0.016666666666666663
+SR-II-138A 0.030303030303030304
+SR1001 -0.02857142857142857
+SR8278 nan
+SRT-1720 -0.09999999999999998
+Staurosporine 0.9999999999999998
+StemRegenin 1 0.6
+STF-31 0.6428571428571429
+Sunitinib -0.10723864871956168
+SZ4TA2 -0.3999999999999999
+Tacedinaline -0.3571428571428571
+Tacrolimus 0.4999999999999999
+Tamoxifen 0.5401139521324421
+Tandutinib -0.10909090909090909
+Tanespimycin -0.18525029088804024
+tanespimycin:bortezomib (250:1 mol/mol) 0.14285714285714285
+tanespimycin:gemcitabine (1:1 mol/mol) -0.19532343099765898
+Telomerase Inhibitor IX 0.4993146195964927
+Temozolomide -0.2911556699892828
+Temsirolimus 0.23809523809523808
+Teniposide -0.12321239579055615
+TG-100-115 0.37142857142857144
+TGX221 0.022002213534027884
+Thalidomide 0.3999999999999999
+Tigecycline 0.9999999999999998
+Tipifarnib -0.0473892103540725
+Tivantinib -0.4999999999999999
+Tivozanib 0.5392027109231149
+Topotecan 0.1250920132623678
+Tosedostat -0.9999999999999998
+Tozasertib -0.7999999999999998
+TPCA-1 0.2
+Trametinib 0.30930851415823857
+Tretinoin -0.7005631782992643
+tretinoin:carboplatin (2:1 mol/mol) -0.3999999999999999
+tretinoin:navitoclax (4:1 mol/mol) 0.10303030303030303
+Triazolothiadiazine 0.5166666666666666
+Trifluoperazine 0.4857142857142857
+Triptolide 0.07142857142857142
+Tubastatin A 0.14371515142959107
+Turofexorate isopropyl -0.296969696969697
+TW 37 0.2249250511616239
+UNC0321 0.1015763379090602
+UNC0638 -0.4289410839989685
+UNC0638:navitoclax (1:1 mol/mol) -0.9285714285714285
+Unii-40E3azg1MX 0.1593137254901961
+VAF-347 0.0
+Valdecoxib 0.46428571428571425
+Vandetanib -0.08571428571428572
+Veliparib dihydrochloride -0.0948438692628412
+Vemurafenib -0.7714285714285715
+Venetoclax 0.05545626047072436
+VER-155008 0.10714285714285712
+Vincristine 0.1983915001311891
+Vorapaxar 0.3928571428571428
+Vorinostat -0.2568272652638353
+vorinostat:carboplatin (1:1 mol/mol) 0.9999999999999998
+vorinostat:navitoclax (4:1 mol/mol) -0.14285714285714285
+VU0155056 0.42857142857142855
+WZ4002 0.0
+WZ8040 0.7999999999999998
+XL765 0.6483186907191011
+YK 4-279 0.26397941695472693
+YL54 0.7999999999999998
+Z-Leu-leu-leu-al 0.3598357857649609
+Zebularine -0.03571428571428571
+ZSTK474 0.23636363636363636
+(5Z)-7-Oxozeaenol 0.5714285714285714
+681640 -0.8136762043449725
+A-443654 -0.9999999999999998
+A-484954 -0.7380952380952381
+A-770041 nan
+A-83-01 -0.4999999999999999
+Acadesine -0.8829187134416477
+ACY-1215 -0.7999999999999998
+AGI-6780 0.1458973304832155
+Akt inhibitor VIII -0.05922566618516668
+Alectinib nan
+Aminofurazanyl-azabenzimidazole 6n 0.6668859288553503
+Amuvatinib 0.9999999999999998
+Apitolisib -0.6
+AR-42 -0.5999999999999999
+Ara-G nan
+ARRY-520 0.29999999999999993
+AS601245 0.28484848484848485
+AS605240 0.2666666666666666
+AST-1306 -0.10714285714285712
+AT-7519 0.9999999999999998
+Avagacestat 0.26507948099153394
+AZ-628 0.5999999999999999
+AZ20 0.14285714285714285
+AZD1208 -0.3333333333333333
+AZD1332 -0.06061608062110899
+AZD2014 0.16506205436421884
+AZD3514 -0.32218993815043423
+AZD4877 0.5428571428571428
+AZD5438 -0.5509080804800991
+AZD5582 -0.1634918599180751
+AZD6738 -0.7142857142857143
+AZD8186 -0.11976262619132588
+AZD8835 0.3603749850782236
+BAM7 0.0
+BAY-61-3606 free base nan
+BHG712 0.6999999999999998
+Bicalutamide -0.29999999999999993
+Bis(2-hydroxy-1-naphthyl) disulfide -0.3142857142857143
+BIX02189 -0.6190476190476191
+Bms-509744 0.9999999999999998
+BPTES 0.19999999999999996
+Bryostatin 1 -0.02857142857142857
+BX-795 -0.14580481468839332
+BX-912 0.5357142857142857
+C-75 -0.4999999999999999
+CAP-232, TT-232, TLN-232 0.3964124835860459
+Capivasertib -0.40559440559440557
+CAY10566 -0.5999999999999999
+CCT007093 -0.8214285714285713
+CCT018159 0.19999999999999996
+CD532 -0.14285714285714285
+Cetuximab -0.4999999999999999
+CGP-082996 0.4999999999999999
+CGP-60474 0.0
+CI-1040 0.3214285714285714
+Cisplatin 0.06483249103580012
+CMK 0.4999999999999999
+CP466722 0.5857791861290061
+CP724714 0.6126374746329801
+CPI-613 0.35714285714285715
+Cudc-101 0.9999999999999998
+CX-5461 -0.29999999999999993
+Cyclopamine nan
+Dacinostat 0.19999999999999996
+Dimethyloxalylglycine -0.42857142857142855
+EHT 1864 0.3571428571428571
+Elesclomol -0.7826908981308054
+Embelin 0.02857142857142857
+Enzastaurin 0.08571428571428572
+Epothilone B 0.02857142857142857
+ETP-45835 0.6950150912113306
+FH535 0.9999999999999998
+FMK -0.09523809523809523
+FR-180204 0.0
+FTI-277 -0.1333333333333333
+GNF-2 nan
+GSK-1904529A -0.18213688176797002
+GSK-650394 -0.09999999999999998
+Gsk-690693 0.8263621207201486
+GSK1070916 0.5428571428571428
+GSK429286A 0.42857142857142855
+GW 441756 0.17575757575757575
+GW-2580 -0.7499999999999999
+HG-5-113-01 0.9999999999999998
+HG-5-88-01 0.9999999999999998
+HG-6-64-1 0.0
+IMD 0354 nan
+IOX2 0.02857142857142857
+Ispinesib -0.03571428571428571
+JNJ38877605 -0.5952380952380952
+JNK Inhibitor VIII -0.09999999999999998
+JNK-9L 0.18787878787878787
+JQ12 0.10714285714285712
+JW-7-24-1 0.7142857142857143
+JW-7-52-1 nan
+kb NB 142-70 -0.3571428571428571
+KIN001-042 0.03571428571428571
+KIN001-055 -0.19999999999999996
+KIN001-244 -0.7499999999999999
+KIN001-266 nan
+KIN001-270 -0.37142857142857144
+Kobe2602 0.2510482226267169
+LCL161 -0.13636363636363635
+LDN-193189 0.29999999999999993
+Lenalidomide 0.11904761904761904
+Lestaurtinib 0.8999999999999998
+Lfm-a13 0.6
+LGK974 0.3591231797705446
+LIMK1 inhibitor BMS4 0.9999999999999998
+Luminespib 0.10561062496333384
+MetAP2 Inhibitor, A832234 -0.19047619047619047
+Midostaurin -0.2833333333333333
+MIM1 0.2841403636377831
+Mirin 0.16413449679361744
+Motesanib -0.22424242424242424
+NG-25 -0.08571428571428572
+NPK76-II-72-1 -0.4999999999999999
+NSC-207895 -0.7999999999999998
+NSC-319726 0.3999999999999999
+NSC-87877 0.016666666666666663
+NU-7441 -0.3571428571428571
+Omipalisib 0.7142857142857143
+Palbociclib 0.19874735961023227
+PD 173074 -0.13211879379767952
+PD-0325901 -0.006164524772768694
+PDK1 inhibitor AR-12 0.09999999999999998
+Pelitinib 0.6364688465216445
+Pemetrexed -0.44545454545454544
+PF-00299804 0.08571428571428572
+PF-00562271 free base -0.09999999999999998
+PF-4708671 0.09999999999999998
+PFI-1 -0.3142857142857143
+PFI-3 -0.15465944314581095
+Pha-665752 nan
+Phenformin -0.6428571428571429
+Pilaralisib 0.3928571428571428
+Ponatinib 0.9999999999999998
+Pyrimethamine -0.09999999999999998
+QL-X-138 0.6826469692905576
+QL-XI-92 0.23809523809523808
+QL-XII-47 0.37142857142857144
+Refametinib 0.24999999999999997
+RO-3306 -0.7999999999999998
+RU-SKI 43 0.16363636363636364
+Rucaparib phosphate -0.9999999999999998
+S-Trityl-L-cysteine nan
+Salubrinal 0.7999999999999998
+Sapitinib 0.19965004347642867
+Savolitinib 0.18333333333333332
+SB 216763 0.6999999999999998
+SB 505124 -0.7999999999999998
+SB52334 0.4999999999999999
+SB590885 0.2857142857142857
+Seliciclib -0.47060485181697004
+SGC0946 0.9999999999999998
+Shikonin 0.11515151515151516
+SL 0101-1 0.4058397249567139
+STF-62247 0.47619047619047616
+T0901317 -0.4999999999999999
+Tak-715 -0.016666666666666663
+Talazoparib 0.08528206142151307
+Tenovin-6 0.8285714285714286
+Thapsigargin -0.4999999999999999
+Torin 2 -0.29999999999999993
+Trichostatin.A 0.6571428571428571
+TWS119 0.3142857142857143
+UNC0642 0.6999999999999998
+UNC1215 -0.3999999999999999
+Vincaleukoblastine -0.21428571428571425
+Vinorelbine 0.045454545454545456
+Vismodegib 0.3999999999999999
+VX-11e 0.0
+VX-702 -0.3826889199656924
+WH-4-023 0.3999999999999999
+Wnt-C59 -0.2833333333333333
+WYE-125132 -0.503030303030303
+WZ-1-84 0.4999999999999999
+WZ3105 0.3333333333333333
+XAV-939 0.3754409076150396
+XMD11-85h -0.4999999999999999
+XMD13-2 0.21428571428571425
+XMD14-99 0.3142857142857143
+XMD8-85 nan
+XMD8-92 0.9999999999999998
+Y-39983 -0.5714285714285714
+YM201636 0.42857142857142855
+Z-LLNle-CHO 0.7999999999999998
+ZG-10 -0.5999999999999999
+Zibotentan -0.19999999999999996
+ZM-447439 -0.4909090909090909
+1,3-Bis(2-chloroethyl)-1-nitrosourea 0.3999999999999999
+2-fluoroAraA (fludarabine) -0.9999999999999998
+2-Pyridinecarboxylic acid 0.08571428571428572
+Acetalax nan
+Afuresertib 0.42857142857142855
+AGI-5198 0.4999999999999999
+AMG-319 0.4999999999999999
+AT13148 nan
+AZ6102 0.3214285714285714
+AZ960 0.6190476190476191
+AZD3759 0.2666666666666666
+AZD5153 0.29999999999999993
+AZD5991 0.3999999999999999
+Buparlisib -0.2571428571428571
+Camptothecin -0.4159769484735954
+CZC24832 -0.9999999999999998
+Dactinomycin nan
+Dihydrorotenone 0.5797710356524485
+Elephantin 0.9999999999999998
+Entospletinib 0.9999999999999998
+Epirubicin 0.0
+EPZ004777 0.3964124835860459
+EPZ5676 -0.2857142857142857
+Gallibiscoquinazole 0.7999999999999998
+GDC0810 nan
+GNE-317 nan
+GSK2578215A 0.0
+GSK2606414 0.3142857142857143
+GSK343 -0.08571428571428572
+GSK591 0.023809523809523808
+I-BRD9 0.30952380952380953
+Ipatasertib -0.14285714285714285
+Irinotecan -0.5428571428571428
+IWP-2 -0.3999999999999999
+KRAS (G12C) Inhibitor-12 -0.3999999999999999
+Leflunomide -0.4999999999999999
+LJI308 -0.9999999999999998
+LY2109761 0.11666666666666665
+Mitoxantrone nan
+MK-8776 0.4999999999999999
+ML323 0.9999999999999998
+MN-64 0.4999999999999999
+Niraparib -0.5357142857142857
+OF-1 0.37142857142857144
+Osimertinib 0.4999999999999999
+OTX015 0.047619047619047616
+P22077 0.6999999999999998
+PCI-34051 0.17857142857142855
+Podophyllotoxin bromide -0.02857142857142857
+PRT062607 0.9999999999999998
+Pyridostatin 0.6999999999999998
+Ribociclib nan
+RVX-208 0.4999999999999999
+Sabutoclax -0.4999999999999999
+SCH772984 -0.05614069646580031
+Sinularin -0.9999999999999998
+Taselisib -0.1597802206153335
+Ulixertinib 0.002754831389919543
+UMI-77 0.4999999999999999
+Uprosertib -0.19999999999999996
+VE-822 -0.4999999999999999
+VE821 -0.7999999999999998
+WEHI-539 -0.19999999999999996
+WIKI4 0.3142857142857143
+WZ4003 -0.5999999999999999
+Zolendronic Acid -0.23809523809523808
+Average spearman correlations of all drugs:  0.03912281699386624
+Average pearson correlations of all drugs:  0.05529157401169869
+Test complete in 0m 20s
+Total run time 25m 52s

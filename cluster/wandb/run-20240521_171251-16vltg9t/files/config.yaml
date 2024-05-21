@@ -1,0 +1,51 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    code_path: code/code/train_transfer.py
+    python_version: 3.12.2
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716304371.82205
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 13
+      - 15
+      - 23
+      - 37
+      4: 3.12.2
+      5: 0.16.3
+      8:
+      - 8
+      13: linux-x86_64
+batch_size:
+  desc: null
+  value: 500
+criterion:
+  desc: null
+  value: MSELoss
+decay_rate:
+  desc: null
+  value: 0.007
+epochs:
+  desc: null
+  value: 300
+learning_rate:
+  desc: null
+  value: 0.1
+momentum:
+  desc: null
+  value: 0.8
+optimizer:
+  desc: null
+  value: sgd

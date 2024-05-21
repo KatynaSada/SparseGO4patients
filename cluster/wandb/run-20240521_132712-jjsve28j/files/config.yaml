@@ -1,0 +1,77 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.2
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716290832.74432
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 13
+      - 15
+      - 23
+      - 37
+      4: 3.12.2
+      5: 0.16.3
+      8:
+      - 8
+      13: linux-x86_64
+batch_size:
+  desc: null
+  value: 20000
+criterion:
+  desc: null
+  value: MSELoss
+decay_rate:
+  desc: null
+  value: 0.002
+drug_neurons:
+  desc: null
+  value:
+  - 200
+  - 100
+  - 50
+epochs:
+  desc: null
+  value: 300
+learning_rate:
+  desc: null
+  value: 0.1
+momentum:
+  desc: null
+  value: 0.9
+num_neurons_final:
+  desc: null
+  value: 50
+num_neurons_final_GO:
+  desc: null
+  value: 30
+num_neurons_per_GO:
+  desc: null
+  value: 6
+optimizer:
+  desc: null
+  value: sgd
+p_drop_drugs:
+  desc: null
+  value: 0
+p_drop_final:
+  desc: null
+  value: 0
+p_drop_genes:
+  desc: null
+  value: 0
+p_drop_terms:
+  desc: null
+  value: 0

@@ -1,0 +1,35 @@
+wandb_version: 1
+
+batch_size:
+  value: 40000
+criterion:
+  value: MSELoss
+decay_rate:
+  value: 0.002
+drug_neurons:
+  value:
+  - 200
+  - 100
+  - 50
+epochs:
+  value: 300
+learning_rate:
+  value: 0.1
+momentum:
+  value: 0.9
+num_neurons_final:
+  value: 50
+num_neurons_final_GO:
+  value: 30
+num_neurons_per_GO:
+  value: 6
+optimizer:
+  value: sgd
+p_drop_drugs:
+  value: 0
+p_drop_final:
+  value: 0
+p_drop_genes:
+  value: 0
+p_drop_terms:
+  value: 0
