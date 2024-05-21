@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --partition=general
+#SBATCH --qos=xlong
+#SBATCH --job-name=hyperr
+#SBATCH --cpus-per-task=2
+#SBATCH --gres=gpu:rtx3090:2
+#SBATCH --mem=20gb
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --output=/scratch/ksada/train1.out
+#SBATCH --mail-type=END
+#SBATCH --mail-user=ksada@unav.es
+
+# tipos gpu:rtx3090:2  gres=gpu:a100:4 constraint=a100-sxm4 pcie
+ 
+echo ===================================
+echo ===     Load the packages       ===
+echo ===================================
+echo `date`
+module load Python
+hostname
+
+echo train.sh ...
+cd /scratch/ksada/SparseGO/cluster
+
+sh /scratch/ksada/SparseGO/cluster/train.sh

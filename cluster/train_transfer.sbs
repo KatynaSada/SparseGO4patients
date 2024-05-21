@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --partition=general
+#SBATCH --qos=regular
+#SBATCH --job-name=hyper_tr
+#SBATCH --cpus-per-task=2
+#SBATCH --gres=gpu:rtx3090:1
+#SBATCH --mem=15gb
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --output=/scratch/jsanchoz/SparseGO4patients/logs/train_transfer.out
+#SBATCH --mail-type=END
+#SBATCH --mail-user=jsanchoz@unav.es
+
+# tipos gpu:rtx3090:2  gres=gpu:a100:4 constraint=a100-sxm4 pcie
+ 
+echo ===================================
+echo ===     Load the packages       ===
+echo ===================================
+echo `date`
+module load Python
+hostname
+
+echo train.sh ...
+cd /scratch/jsanchoz/SparseGO4patients/cluster
+
+sh /scratch/jsanchoz/SparseGO4patients/cluster/train_transfer.sh
