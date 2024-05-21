@@ -65,7 +65,7 @@ parser.add_argument('-num_neurons_final', help='The number of neurons in the top
 parser.add_argument('-predict', help='Dataset to be predicted', type=str, default=inputdir+"sparseGO_test.txt")
 parser.add_argument('-result', help='Result file name', type=str, default=modeldir)
 
-parser.add_argument('-project', help='W&B project name', type=str, default="PDCs2018_expression_LELO_final")
+parser.add_argument('-project', help='W&B project name', type=str, default="SparseGO4patients")
 
 # call functions
 opt = parser.parse_args()
@@ -489,7 +489,7 @@ sweep_config = {
 #     – sweep_config: the sweep config dictionary defined above
 #     – entity: Set the username for the sweep
 #     – project: Set the project name for the sweep
-sweep_id = wandb.sweep(sweep_config, entity="katynasada", project=opt.project)
+sweep_id = wandb.sweep(sweep_config, entity="miramon_team", project=opt.project)
 
 # Load ontology: create the graph of connected GO terms
 since1 = time.time()

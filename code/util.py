@@ -14,6 +14,144 @@ random.seed(0)
 torch.seed()
 np.random.seed(0)
 
+# The next block codes between "###" are performed outside the main code. 
+# We are normalizing-scaling the input data of cell lines and PDC expression using a quantile normalization 
+# calculating the median of the CL expressions and doing rankings) and standard normalization.
+
+def read_data_cl_pdc():
+    """
+    This function reads the gene expression data for cell lines and patient-derived cells from text files.
+    
+    Returns:
+    tuple: Two DataFrames containing the gene expression data for cell lines (df_cl_genes) and 
+           patient-derived cells (df_pdc_genes).
+
+    The data is read from the following files:
+    - Cell line gene expression data from 'cell2expression.txt'
+    - Patient-derived cell gene expression data from 'cell2expression_PDCs2018.txt'
+    - Gene names from 'gene2ind.txt'
+
+    The function also assigns appropriate column names (gene names) and index names (sample identifiers).
+    """
+    df_cl_genes = pd.read_csv('../data/CL_PDCs2018_expression/allsamples/cell2expression.txt', sep=',', header=None)
+    df_pdc_genes = pd.read_csv('../data/PDCs2018_expression_LELO/samples1/cell2expression_PDCs2018.txt', sep=',', header=None)
+    gene_names = pd.read_csv('../data/CL_PDCs2018_expression/allsamples/gene2ind.txt', sep="\t", header=None)[1].values.tolist()
+    
+    df_cl_genes.columns = gene_names
+    df_cl_genes.index = ['cl' + str(i+1) for i in range(len(df_cl_genes.index))]
+    df_pdc_genes.columns = gene_names
+    df_pdc_genes.index = ['p' + str(i+1) for i in range(len(df_pdc_genes.index))]
+    return df_cl_genes, df_pdc_genes
+
+
+def do_transformation(df_orig, df_median, gene_names):
+    """
+    This function transforms the original gene expression data to match the quantile normalized distribution.
+
+    Parameters:
+    df_orig (DataFrame): Original gene expression data.
+    df_median (DataFrame): DataFrame containing median values and ranks.
+    gene_names (list): List of gene names.
+
+    Returns:
+    DataFrame: Transformed gene expression data.
+    
+    The transformation process involves:
+    1. Sorting each row of the original data in descending order.
+    2. Ranking the sorted values.
+    3. Merging the ranked values with the median ranks.
+    4. Replacing original values with the corresponding median values.
+    """
+    df_genes_norm = pd.DataFrame(columns=gene_names)
+    for i in range(0, df_orig.shape[0]):
+        # Select row i of the original data
+        aux = df_orig.iloc[i, :].sort_values(ascending=False)
+
+        # Create DataFrame with original values and ranks
+        df_aux = pd.DataFrame({'Origin_Value': aux.values, 'Rank': range(0, len(aux))}, index=aux.index)
+        df_aux = df_aux.sort_index() 
+
+        # Add gene column to median and auxiliary dataframes
+        df_median['genes'] = df_median.index
+        df_aux['genes'] = df_aux.index
+        df_median.reset_index(drop=True, inplace=True)
+        df_aux.reset_index(drop=True, inplace=True)
+
+        # Merge based on Rank
+        df_merge = pd.merge(df_aux, df_median, on='Rank', suffixes=('_orig', '_median'))
+
+        # Assign the median values to the normalized data
+        df_merge = df_merge[['genes_orig', 'Median']]
+        df_merge.set_index('genes_orig', inplace=True)
+
+        # Store the normalized values in the result DataFrame
+        df_genes_norm.loc[i] = df_merge.values.flatten()
+    return df_genes_norm
+
+def quantile_normalization():
+    """
+    This function performs quantile normalization on gene expression data from two dataframes: 
+    one containing cell line gene expression data (df_cl_genes) and another containing patient-derived 
+    cell gene expression data (df_pdc_genes). The steps involved are:
+
+    1. Read data from the files using the read_data_cl_pdc() function.
+    2. Calculate the median expression value for each gene across all cell lines.
+    3. Rank these median values in descending order and create a DataFrame to hold these values along with their ranks.
+    4. Normalize the patient-derived cell gene data and the cell line gene data by transforming them using the do_transformation() function.
+    5. Save the normalized data to CSV files.
+
+    The quantile normalization ensures that the distribution of gene expression values is the same for both the cell lines and the patient-derived cells.
+    """
+    df_cl_genes, df_pdc_genes = read_data_cl_pdc()
+    gene_names = df_cl_genes.columns.values.tolist()
+
+    # Calculate median and rank the genes
+    median_genes = df_cl_genes.median(axis=0)
+    median_genes = median_genes.sort_values(ascending=False)
+
+    # Create DataFrame with genes ordered by median values and their ranks
+    df_cl_genes_median = pd.DataFrame({'Median': median_genes.values, 'Rank': range(0, len(median_genes))}, index=median_genes.index)
+    df_cl_genes_median = df_cl_genes_median.sort_index() 
+
+    # Transform the original dataframes using the calculated medians
+    df_pdc_genes_norm = do_transformation(df_orig=df_pdc_genes, df_median=df_cl_genes_median.copy(), gene_names=gene_names)
+    df_cl_genes_norm = do_transformation(df_orig=df_cl_genes, df_median=df_cl_genes_median.copy(), gene_names=gene_names)
+
+    # Save normalized data to CSV files
+    df_pdc_genes_norm.to_csv('cell2expression_pdc_genes_norm.txt', index=False, header=False, sep=',')
+    df_cl_genes_norm.to_csv('cell2expression_cl_genes_norm.txt', index=False, header=False, sep=',')
+
+def standard_scale():
+    """
+    This function standardizes the gene expression data from two DataFrames: 
+    one containing cell line gene expression data (df_cl_genes) and the other containing patient-derived cell 
+    gene expression data (df_pdc_genes).
+    The standardization is done using the mean and standard deviation calculated from each DataFrame independently.
+    The resulting DataFrames are saved to CSV files.
+    """
+    df_cl_genes, df_pdc_genes = read_data_cl_pdc()
+
+    # Calculate the mean and standard deviation of df_cl_genes
+    mean_cl_genes = df_cl_genes.mean()
+    std_cl_genes = df_cl_genes.std()
+
+    # Calculate the mean and standard deviation of df_pdc_genes
+    mean_pdc_genes = df_pdc_genes.mean()
+    std_pdc_genes = df_pdc_genes.std()
+
+    # Standardize df_cl_genes using its own mean and standard deviation
+    df_cl_genes_scaled = (df_cl_genes - mean_cl_genes) / std_cl_genes
+    # Standardize df_pdc_genes using its own mean and standard deviation
+    df_pdc_genes_scaled = (df_pdc_genes - mean_pdc_genes) / std_pdc_genes
+
+    # Save the standardized DataFrames to CSV files
+    df_cl_genes_scaled.to_csv('../data/CL_PDCs2018_expression/allsamples/cell2expression_scaled.txt', index=False, header=False, sep=',')
+    for i in ['allsamples', 'samples1', 'samples2', 'samples3', 'samples4', 'samples5']:
+        df_pdc_genes_scaled.to_csv(f'../data/PDCs2018_expression_LELO/{i}/cell2expression_scaled.txt', index=False, header=False, sep=',')
+
+
+################################################################
+
 def load_mapping(mapping_file):
     """
     Opens a txt file with two columns and saves the second column as the key of the dictionary and the first column as a value.
@@ -246,7 +384,6 @@ def load_train_data(file_name, cell2id_mapping, drug2id_mapping):
                 label.append([float(tokens[2]), float(tokens[3])]) # keep both labels
 
     return feature, label
-
 
 def prepare_train_data(train_file, test_file, cell2id_mapping_file, drug2id_mapping_file):
 

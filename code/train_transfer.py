@@ -40,6 +40,7 @@ parser.add_argument('-project', help='Project name', type=str, default="LECO_tra
 parser.add_argument('-sweep_name', help='W&B project name',type=str, default="samples")
 
 parser.add_argument('-pretrained', help='Pretrained SparseGO model', type=str, default="/Users/katyna/Library/CloudStorage/OneDrive-Tecnun/SparseGO4patients/results/weights&biases/CL_PDCs2018_Mutations/allsamples/last_model.pt")
+parser.add_argument('-tags', help='Tags of type of data or/and model we are trying', type=str, nargs='+', default=['quantile'])
 
 parser.add_argument('-train', help='Training dataset', type=str, default=inputdir+"sparseGO_train.txt")
 parser.add_argument('-val', help='Validation dataset', type=str, default=inputdir+"sparseGO_val.txt")
@@ -97,7 +98,6 @@ def train_model(run,config,model, optimizer, criterion, train_data, cell_feature
 
          model.train() # Tells the model that you are training it. So effectively layers which behave different on the train and test procedures know what is going on
 
-         #train_predict = torch.zeros(0,1).cuda(device) # initialize training results tensor
          train_predict = torch.zeros(0, 1, device=device) # initialize training results tensor
 
          # Learning rate decay
@@ -159,7 +159,7 @@ def train_model(run,config,model, optimizer, criterion, train_data, cell_feature
          val_corr = pearson_corr(val_predict, val_label_device) # compute correlation
          val_corr_spearman = spearman_corr(val_predict.cpu().detach().numpy(), val_label_device.cpu())
          val_corr_per_drug = per_drug_corr(val_feature[:,1], val_predict, val_label_device)
-         val_corr_low = low_corr(val_predict, val_label_device,-0.1)
+         val_corr_low = low_corr(val_predict, val_label_device,0.2)
 
          print('Val Loss: {:.4f}; Val Corr (pear.): {:.5f}; Val Corr (sp.): {:.5f}; Per drug corr.: {:.5f}'.format(val_cum_loss, val_corr,val_corr_spearman,val_corr_per_drug))
          print('Allocated after val:', round(torch.cuda.memory_allocated(0)/1024**3,3), 'GB')
@@ -270,7 +270,7 @@ def predict(statistic,run,criterion,predict_data, gene_dim, drug_dim, model_file
     test_corr = pearson_corr(test_predict, predict_label_device)
     test_corr_spearman = spearman_corr(test_predict.cpu().detach().numpy(), predict_label_device.cpu())
     test_corr_per_drug = per_drug_corr(predict_feature[:,1], test_predict, predict_label_device)
-    test_corr_low = low_corr(test_predict, predict_label_device,-0.1)
+    test_corr_low = low_corr(test_predict, predict_label_device,0.2)
     
     print('Test loss: {:.4f}'.format(test_cum_loss))
     print('Test Corr (p): {:.4f}'.format(test_corr))
@@ -393,7 +393,7 @@ sweep_config = {
     'method': 'bayes', #bayes, random, grid
 
     'metric': {
-      'name': 'pearson_test_ModelPearson',
+      'name': 'spearman_test_ModelPerDrug',
       'goal': 'maximize'
     },
 
@@ -418,7 +418,7 @@ sweep_config = {
             #'value': 'sgd'
         },
         'decay_rate': {
-            'values': [0.01,0.1,0.007,0.002]
+            'values': [0.01,0.1,0.007,0.001, 0.002]
             #'value': 0.001
         },
         'criterion': {
@@ -478,10 +478,10 @@ num_genes = len(gene2id_mapping)
 #     – sweep_config: the sweep config dictionary defined above
 #     – entity: Set the username for the sweep
 #     – project: Set the project name for the sweep
-sweep_id = wandb.sweep(sweep_config, entity="katynasada", project=opt.project)
+sweep_id = wandb.sweep(sweep_config, entity="miramon_team", project=opt.project)
 def pipeline():
     # Initialize a new wandb run
-    run = wandb.init(settings=wandb.Settings(start_method="thread"),save_code=True,name=opt.sweep_name) # tags=["CLS"]
+    run = wandb.init(settings=wandb.Settings(start_method="thread"),save_code=True,name=opt.sweep_name, tags=opt.tags) # tags=["CLS"]
 
     config = wandb.config  # Config is a variable that holds and saves hyperparameters and inputs
 
@@ -606,6 +606,6 @@ def pipeline():
     wandb.log({"time": '{:.0f}m {:.0f}s'.format(time_elapsed0 // 60, time_elapsed0 % 60)})
 
 # RUUUUUUUN
-wandb.agent(sweep_id, pipeline,count=50)
+wandb.agent(sweep_id, pipeline,count=200)
 
 ####
